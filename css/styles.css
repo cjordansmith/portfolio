@@ -1,0 +1,328 @@
+/*  ./css/styles.css  */
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,600,800');
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans:300,400,700');
+@import url('https://fonts.googleapis.com/css?family=Fira+Mono:700');
+@import url('https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700');
+
+
+/* font-family: 'Montserrat', sans-serif; */ /* navigation */
+/* font-family: 'Fira Sans', sans-serif; *//* headers */
+/* font-family: 'Quicksand', sans-serif; *//* body */
+
+
+
+
+/* ==========  global styles  ========== */
+body {
+  background: #48a5e7;
+  color: #fff;
+  font-family: 'Quicksand', sans-serif;
+  height: 100vh;
+}
+
+body * {
+}
+
+header {}
+section {
+  padding: 50px 2%;
+}
+
+h2 {
+  font-size: 32px;
+  font-weight: 300;
+  margin-top: 10px;
+}
+h3 {
+  font-size: 18px;
+  font-weight: 700;
+  font-family: 'Fira Sans', sans-serif;
+  letter-spacing: 1.1px;
+  font-variant: small-caps;
+}
+h4 {
+  font-size: 22px;
+  line-height: 1;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 300;
+}
+/* ==========  colors  ========== */
+.color-1 { color: #9ED1F6 }
+.color-2 { color: #6EB9EE }
+.color-0 { color: #48A5E7 }	/* Main Primary color */
+.color-3 { color: #2490DD }
+.color-4 { color: #097CCD }
+
+.color-green { color: #3eea9c; }
+.color-white { color: #fff; }
+
+.text-black { color: #3e3e40; }
+.text-gray-1 { color: #333c4e; opacity: 0.54;}
+.text-gray { color: #959696; }
+
+.bg-white { background-color: #fff; }
+.bg-gray { background-color: #e9eaea; }
+.bg-darkgray { background-color: #d4d5d6; }
+.bg-color-1 {
+  background-color: #9ED1F6;
+  color: #3e3e40;
+}
+.bg-color-4 { background-color: #097ccd; }
+
+.btn-color-4 {
+  background-color: #097ccd;
+}
+
+/* ==========  header styles  ========== */
+.header {
+  font-family: 'Montserrat', sans-serif;
+}
+  .header-nav {
+    width: 100%;
+    margin-top: 20px;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 3px solid rgba(255,255,255,0.5);
+  }
+  .header h2 {
+    padding: 0;
+    margin: 0;
+    font-size: 26px;
+    font-weight: 600;
+    line-height: 36px;
+  }
+  .header nav {
+    width: auto;
+  }
+  .header .nav-ul {
+    list-style-type: none;
+    width: auto;
+    margin: 0;
+    padding: 0;
+  }
+  .header .nav-ul a {
+    color: #fff;
+  }
+  .header .nav-ul a:hover {
+    color: rgba(255,255,255,0.7);
+  }
+  .header .nav-ul li.nav-li {
+    display: inline-block;
+    margin: 0;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 36px;
+    text-transform: uppercase;
+  }
+  .header .nav-ul li:not(.nav-li-last) {
+    margin-right: 12px;
+  }
+
+/* ==========  cover styles  ========== */
+.cover {
+  height: 100vh;
+  margin-top: -59px;
+  display: flex;
+  flex: 1 1 auto;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+.cover .cover-bar {
+  height: 140px;
+  background: #9ED1F6;
+  width: 100vw;
+  margin: 20px 0;
+  background-image: url("../assets/images/hooly.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  display: grid;
+  grid-template-columns: [l-bracket] 1fr [r-bracket] 1fr;
+  grid-template-rows: [main] 140px;
+  overflow: hidden;
+}
+.l-bracket {
+  grid-area: l-bracket main;
+  margin-right: 80px;
+}
+.r-bracket {
+  grid-area: r-bracket main;
+  margin-left: 80px;
+}
+.l-bracket, .r-bracket {
+  font-size: 400px;
+  font-weight: 700;
+  line-height: 100px;
+  margin-top: -30px;
+  margin-bottom: 0;
+  justify-self: center;
+  align-self: stretch;
+  overflow: hidden;
+  overflow-x: hidden;
+}
+.cover .cover-title,
+.cover .cover-tag  {
+  text-align: center;
+}
+.cover .cover-title h1 {
+  font-size: 64px;
+  line-height: 1;
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 700;
+}
+.cover .cover-tag h4 {
+  font-size: 22px;
+  line-height: 1;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 300;
+}
+.cover-main > i {
+  font-size: 50px;
+  position: absolute;
+  bottom: 10px;
+  left: calc(50% - 25px);
+}
+.cover-main > i:hover {
+  cursor: pointer;
+}
+
+/* ==========  home-contact styles  ========== */
+.home-contact {
+
+}
+.home-contact > .row > header {
+  text-align: center;
+}
+.pmd-textfield .form-control {
+
+}
+.pmd-textfield label {
+  color: #3e3e40;
+  opacity: 0.55;
+  font-weight: 500;
+}
+.contact-btn {
+  margin-top: 20px;
+}
+.contact-info {
+  text-align: center;
+}
+.contact-info h3 {
+  font-weight: 400;
+  letter-spacing: normal;
+}
+
+/* ==========  footer styles  ========== */
+.footer-info {
+  font-size: 12px;
+  text-transform: uppercase;
+  padding: 40px;
+  text-align: center;
+}
+.footer-info > ul {
+
+}
+.footer-info > ul > li {
+ display: inline-block;
+ margin-left: 20px;
+ margin-right: 20px;
+}
+.footer-info > ul > li > a {
+  color: #fff;
+  text-decoration: underline;
+}
+p.location {
+  margin-bottom: 40px;
+}
+.social-icons a {
+  font-size: 30px;
+  display: inline-block;
+  margin: 0 12px;
+  color: #3e3e40;
+}
+.social-icons a:hover {
+  color: #3e3e40;
+  opacity: 0.54;
+}
+
+/* ==========  apps page styles  ========== */
+.container-apps {
+}
+.page-header {
+  border-color: #3eea9c;
+  border-width:medium;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.app-card {
+  color: #3e3e40;
+}
+.pmd-card-media-inline .pmd-card-media {
+    margin-bottom: 16px;
+  }
+h2.pmd-card-title-text {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+.card-url {
+  font-size: 12px;
+  line-height: 1.6;
+  display: inline-block;
+  margin-bottom: 0;
+  margin-left: 4px;
+  color: #3e3e40;
+  opacity: 0.74;
+}
+span.pmd-card-subtitle-text {
+  line-height: 1.6;
+  padding-bottom: 0;
+  opacity: 1;
+  font-size: 14px;
+}
+.service-links {
+  margin-top: 10px;
+}
+.other-projects {
+  text-align: center;
+}
+.project-info {
+  margin-bottom: 30px;
+  text-align: left;
+}
+a.project-title-link {
+  font-weight: 400;
+  color: #fff;
+}
+a.project-title-link:hover {
+  color: #fff;
+  opacity: 0.54;
+}
+h2.pmd-card-title-text.project-title {
+  font-size: 20px;
+  font-weight: 400;
+}
+.project-github > .card-url {
+  font-size: 16px;
+  color: #3e3e40;
+  opacity: 0.54;
+}
+.project-github > .card-url:hover {
+  color: #3e3e40;
+  opacity: 1;
+}
+
+img.preview {
+  width: 150px;
+  height: 150px;
+}
+
+img.service-icon {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+}

@@ -1,0 +1,459 @@
+/* DOCUMENT INFORMATION
+	- Document: CSS Zen Garden Theme: Calvin and Hobbes
+	- Version:  1.0.0
+	- Class:   WEB 112-001 CSS Techniques and Projects
+	- Author:   Jordan Smith
+*/
+
+@import url(https://fonts.googleapis.com/css?family=Anton);
+@import url(https://fonts.googleapis.com/css?family=Lato:400,300,700,900);
+@font-face {
+   font-family: calvinSolid;
+   src: url(assets/calvinn.ttf);
+}
+
+@font-face {
+   font-family: calvinOutline;
+   src: url(assets/calvino.ttf);
+   font-weight: bold;
+}
+
+html {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+body {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* HTML5 display definitions
+   ========================================================================== */
+html,
+body,
+div,
+section,
+header,
+aside,
+nav {
+	display: block;
+}
+h1,
+h2,
+h3,
+p,
+a,
+abbr,
+ul,
+li {
+	display:inline-block;
+}
+html,
+body,
+div,
+section,
+header,
+aside,
+nav,
+h1,
+h2,
+h3,
+p,
+a,
+abbr,
+ul,
+li {
+  box-sizing: border-box;
+  width: auto;
+  height: auto;
+  margin: 0;
+  padding: 0;
+}
+[hidden],
+template {
+  display: none;
+}
+
+/* Links
+   ========================================================================== */
+a {
+  background-color: transparent;
+}
+a:active,
+a:hover {
+  outline: 0;
+}
+
+/* Text-level semantics
+   ========================================================================== */
+b,
+strong {
+  font-weight: bold;
+}
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Embedded content
+   ========================================================================== */
+img {
+  border: 0;
+}
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* Grouping content
+   ========================================================================== */
+figure {
+  margin: 1em 40px;
+}
+hr {
+  box-sizing: content-box;
+  height: 0;
+}
+pre {
+  overflow: auto;
+}
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+/* Forms
+   ========================================================================== */
+button,
+input,
+optgroup,
+select,
+textarea {
+  margin: 0;
+}
+button {
+  overflow: visible;
+}
+button,
+select {
+  text-transform: none;
+}
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+input {
+  line-height: normal;
+}
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+input[type="search"] {
+  -webkit-appearance: textfield;
+  box-sizing: content-box;
+}
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+legend {
+  border: 0;
+  padding: 0;
+}
+textarea {
+  overflow: auto;
+}
+
+
+/* THEME CSS
+   ========================================================================== */
+body {
+	background: url(assets/calvin-hobbes.png);
+	background-size: contain;
+	background-position: top right;
+	background-repeat: no-repeat;
+	background-color: #f9deaf;
+	font-family: 'Lato', sans-serif;
+	font-weight: 300;
+	font-size: 1vw;
+	letter-spacing: 0.04vw;
+	line-height: 1.4vw;
+}
+div.page-wrapper {
+	width: 90%;
+	margin: 0 auto;
+	padding: 10px;
+	position: relative;
+}
+h1 {
+	font-family: 'Anton', sans-serif;
+	font-size: 8vw;
+	text-transform: uppercase;
+	color: #1b8678;
+	-webkit-text-stroke: 0.1px #3a3a3a;
+	margin: 0;
+	line-height: 6vw;
+}
+h2 {
+	font-family: 'Anton', sans-serif;
+	display: block;
+	font-size: 2.8vw;
+	-webkit-text-stroke: 0.4px #3a3a3a;
+	color: #fefefe;
+	margin: 0.3vw 0 0 0;
+	line-height: 3.2vw;
+}
+h3 {
+	width: 100%;
+	font-family: calvinSolid;
+	font-size: 1.8vw;
+	line-height: 1.8vw;
+	font-weight: normal;
+	letter-spacing: 0.12vw;
+	margin-bottom: 10px;
+	border-bottom: 2px solid #3a3a3a;
+}
+p {
+	text-align: justify;
+}
+a {
+	font-family: calvinSolid;
+	color: #1b8678;
+	font-weight: bold;
+}
+
+
+section, #zen-supporting {
+	display: block;
+	width: 60%;
+}
+aside {
+	position: absolute;
+	top: 22vw;
+	right: 0;
+	display:block;
+	width: 40%;
+	float: right;
+	text-align: center;
+}
+#zen-summary, #zen-preamble {
+	margin-top: 25px;
+	margin-bottom: 0;
+	display: none;
+}
+#zen-preamble {
+	margin-top: 50px;
+}
+#zen-explanation, #zen-participation, #zen-benefits, #zen-requirements {
+	margin-top: 25px;
+	padding: 20px;
+	border: 2px solid #3a3a3a;
+	background: #f4b00f;
+	color: #fefefe;
+}
+#zen-explanation a, #zen-participation a, #zen-benefits a, #zen-requirements a {
+	font-family: 'Lato', sans-serif;
+	text-decoration: none;
+}
+#zen-explanation a:hover, #zen-participation a:hover, #zen-benefits a:hover, #zen-requirements a:hover {
+	text-decoration: underline;
+	color: #fefefe;
+}
+#zen-explanation a:visited, #zen-participation a:visited, #zen-benefits a:visited, #zen-requirements a:visited {
+	color: #1b8678;
+}
+#zen-summary {
+	border: 2px solid #3a3a3a;
+	height: 200px;
+	background: #f4b00f;
+	color: #fefefe;
+	padding: 20px;
+	position: relative;
+}
+#zen-summary p {
+	margin: 0;
+	font-weight: 300;
+}
+#zen-summary p:nth-child(1) {
+	width: 70%;
+}
+#zen-summary p:nth-child(2) {
+	width: 29%;
+	float: right;
+}
+#zen-explanation p:nth-child(2) {
+	margin-bottom: 10px;
+}
+#zen-explanation {
+	margin-top: 7vw;
+}
+#zen-explanation p:nth-child(3) {
+	margin-bottom: 0;
+}
+#zen-participation p:nth-child(2), #zen-participation p:nth-child(3) {
+	margin-bottom: 10px;
+}
+#zen-participation p:nth-child(4) {
+	margin-bottom: 0;
+}
+#zen-requirements p:nth-child(2), #zen-requirements p:nth-child(3), #zen-requirements p:nth-child(4), #zen-requirements p:nth-child(5) {
+	margin-bottom: 10px;
+}
+#zen-requirements p:nth-child(6) {
+	margin-bottom: 0;
+}
+footer {
+	position: absolute;
+	bottom: 2%;
+	right: 10.5%;
+}
+footer a {
+	font-size: 2vw;
+	text-decoration: none;
+	color: #d34811;
+	margin: 0 .3vw;
+	font-weight: bold;
+	letter-spacing: 0.1vw;
+}
+footer a:hover {
+	color: #1b8678;
+}
+footer a:visited {
+	color: #d34811;
+}
+#design-selection li {
+	width: auto;
+	display: block;
+	margin: 0;
+	background: url(assets/plank-2.png);
+	background-size:contain;
+	background-position: center center;
+	background-repeat: no-repeat;
+	text-align: center;
+	padding: 2vw 1.6vw;
+}
+#design-selection h3 {
+	display: none;
+}
+#design-selection ul {
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+#design-selection a {
+	font-size: 1.2vw;
+	color: #fefefe;
+	padding: 0;
+	margin: 0;
+}
+#design-selection a:hover {
+	color: #1b8678;
+}
+#design-selection a:visited {
+	color: #1b8678;
+}
+#design-selection li {
+	position: absolute;
+}
+#design-selection li:nth-child(1), #design-selection li:nth-child(7) {
+	display: none;
+}
+#design-selection li:nth-child(2) {
+	top: 0;
+	left: 13vw;
+	width: auto;
+}
+#design-selection li:nth-child(3) {
+	top: 6vw;
+	left: 11vw;
+	width: auto;
+}
+#design-selection li:nth-child(4) {
+	top: 12vw;
+	left: 10vw;
+	width: auto;
+}
+#design-selection li:nth-child(5) {
+	top: 18vw;
+	left: 9.2vw;
+	width: auto;
+}
+#design-selection li:nth-child(6) {
+	top: 24vw;
+	left: 8vw;
+	width: auto;
+}
+#design-selection li:nth-child(8) {
+	top: 30vw;
+	left: 7vw;
+	width: auto;
+}
+
+#design-archives {
+	background: #1b8678;
+	color: #fefefe;
+	width: 80%;
+	padding: 20px;
+	margin: 40.9vw auto 20px auto;
+	border: 2px solid #3a3a3a;
+}
+#design-archives a {
+	color: #fefefe;
+	padding: 0 10px;
+	font-family: 'Lato', sans-serif;
+	text-decoration: none;
+}
+#design-archives a:hover {
+	text-decoration: underline;
+}
+#design-archives a:visited {
+	color: #fefefe;
+}
+#zen-resources {
+	background: #fefefe;
+	width: 80%;
+	display: block;
+	padding: 20px;
+	margin: 0 auto 0 auto;
+	border: 2px solid #3a3a3a;
+}
+#zen-resources li {
+	display: block;
+}
+#zen-resources a {
+	font-family: 'Lato', sans-serif;
+	text-decoration: none;
+}
+#zen-resources a:hover {
+	text-decoration: underline;
+}
+#zen-resources a:visited {
+	color: #1b8678;
+}

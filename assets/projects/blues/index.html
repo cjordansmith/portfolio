@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="content-type" content="application/xhtml+xml; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>Wk07 - Web App</title>
+	<link rel="shortcut icon" href="favicon.ico">
+
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700" />
+
+	<link rel="stylesheet" type="text/css" href="css/jquery.mobile-1.4.5.min.css" />
+    
+	<link rel="stylesheet" type="text/css" href="css/blues.css" />
+    <link rel="stylesheet" type="text/css" href="css/jquery.mobile.icons.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/jquery.mobile-1.4.5.min.js"></script>
+	<script type="text/javascript" src="js/code.js"></script>
+</head>
+<body>
+
+	<!-- first page / home -->
+	<div data-role="page" class="ui-page-theme-a" id="home">
+
+		<!-- header -->
+		<div data-role="header" data-theme="a" id="headerBar">
+			<div class="ui-grid-b">
+				<div class="ui-block-a center-wrapper">
+					<div class="center-wrapper" style="height:70px">
+						<div class="ui-grid-a">
+							<div class="ui-block-a center-wrapper no-padding">
+								<div class="ui-bar  center-wrapper no-padding" style="height:70px">
+									<img src="img/stlblues.png" alt="blues logo" id="headerLogo">
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<div class="ui-block-b">
+					<div class="center-wrapper" style="height:70px">
+						<h1 id="headerH1">St Louis Blues</h1>
+					</div>
+				</div>
+				<div class="ui-block-c">
+					<div class="center-wrapper" style="height:70px">
+
+						<div class="ui-grid-a">
+							<div class="ui-block-a center-wrapper no-padding"></div>
+							<div class="ui-block-b center-wrapper no-padding">
+								<div class="ui-bar center-wrapper no-padding" style="height:70px">
+									<a href="#popupLogin" data-role="button" data-rel="popup"  class="ui-btn ui-btn-inline ui-icon-check ui-btn-icon-left  ui-bar" data-transition="flow" id="signinBtn">Sign in</a>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+
+			<div data-role="popup" id="popupLogin" data-theme="a" class="ui-corner-all">
+				<form>
+					<div style="padding:10px 20px;">
+						<h3>Please sign in</h3>
+						<label for="un" class="ui-hidden-accessible">Username:</label>
+						<input type="text" name="user" id="un" value="" placeholder="username" data-theme="a">
+						<label for="pw" class="ui-hidden-accessible">Password:</label>
+						<input type="password" name="pass" id="pw" value="" placeholder="password" data-theme="a">
+						<button type="submit" class="ui-btn ui-corner-all ui-shadow ui-btn-icon-left ui-icon-check">Sign in</button>
+					</div>
+				</form>
+			</div>
+		</div>
+
+		<!-- navbar -->
+		<div data-role="navbar">
+			<ul>
+				<li><a href="#home" id="home" data-icon="home" class="ui-btn-active ui-state-persist">Home</a></li>
+				<li><a href="#hist" id="info" data-icon="info">History</a></li>
+				<li><a href="#line" id="user" data-icon="user">Line 1</a></li>
+				<li><a href="#cal" id="calendar" data-icon="calendar">Schedule</a></li>
+			</ul>
+		</div>
+
+		<!-- main -->
+		<div role="main" class="ui-content">
+			<div class="ui-bar center-wrapper">
+				<h2 class="titleH2">Home</h2>
+			</div>
+			<div class="ui-bar"></div>
+
+			<div class="ui-body ui-corner-all">
+				<p>Page content goes here.</p>
+				<p>I'm first in the source order so I'm shown as the page.</p>
+				<p>View internal page called <a href="#hist">History</a></p>
+			</div>
+
+		</div>
+
+		<!-- footer -->
+		<div data-role="footer" data-position="fixed">
+			<div class="ui-body center-wrapper">
+				<a href="index.html" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-icon-left ui-icon-home">Home</a>
+			</div>
+		</div>
+
+	</div>
+
+	<!-- second page / history -->
+	<div data-role="page" class="ui-page-theme-a" id="hist">
+
+		<!-- header -->
+		<div data-role="header" data-theme="a" id="headerBar">
+			<div class="ui-grid-b">
+				<div class="ui-block-a center-wrapper">
+					<div class="center-wrapper" style="height:70px">
+
+						<div class="ui-grid-a">
+							<div class="ui-block-a center-wrapper no-padding">
+								<div class="ui-bar  center-wrapper no-padding" style="height:70px">
+									<img src="img/stlblues.png" alt="blues logo" id="headerLogo">
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<div class="ui-block-b">
+					<div class="center-wrapper" style="height:70px">
+						<h1 id="headerH1">St Louis Blues</h1>
+					</div>
+				</div>
+				<div class="ui-block-c">
+					<div class="center-wrapper" style="height:70px">
+
+						<div class="ui-grid-a">
+							<div class="ui-block-a center-wrapper no-padding"></div>
+							<div class="ui-block-b center-wrapper no-padding">
+								<div class="ui-bar center-wrapper no-padding" style="height:70px">
+									<a href="#popupLogin" data-role="button" data-rel="popup"  class="ui-btn ui-btn-inline ui-icon-check ui-btn-icon-left ui-bar" data-transition="flow" id="signinBtn">Sign in</a>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+
+			<div data-role="popup" id="popupLogin" data-theme="a" class="ui-corner-all">
+				<form>
+					<div style="padding:10px 20px;">
+						<h3>Please sign in</h3>
+						<label for="un" class="ui-hidden-accessible">Username:</label>
+						<input type="text" name="user" id="un" value="" placeholder="username" data-theme="a">
+						<label for="pw" class="ui-hidden-accessible">Password:</label>
+						<input type="password" name="pass" id="pw" value="" placeholder="password" data-theme="a">
+						<button type="submit" class="ui-btn ui-corner-all ui-shadow ui-btn-icon-left ui-icon-check">Sign in</button>
+					</div>
+				</form>
+			</div>
+		</div>
+
+		<!-- navbar -->
+		<div data-role="navbar">
+			<ul>
+				<li><a href="#home" id="home" data-icon="home" >Home</a></li>
+				<li><a href="#hist" id="info" data-icon="info" class="ui-btn-active ui-state-persist">History</a></li>
+				<li><a href="#line" id="user" data-icon="user">Line 1</a></li>
+				<li><a href="#cal" id="calendar" data-icon="calendar">Schedule</a></li>
+			</ul>
+		</div>
+
+		<!-- main -->
+		<div role="main" class="ui-content">
+			<div class="ui-bar ui-bar-a center-wrapper">
+				<h2 class="titleH2">Team History</h2>
+			</div>
+			<div class="ui-bar"></div>
+			<div class="ui-body ui-corner-all">
+				<p>St. Louis was the last of the six expansion teams to gain entry into the League, chosen over Baltimore at the insistence of the Chicago Black Hawks. The Black Hawks were owned by the influential Wirtz family of Chicago, which also owned the decrepit St. Louis Arena. The Wirtzes sought to unload the arena, which had not been well-maintained since the 1940s, and thus pressed the NHL to give the franchise to St. Louis, which had not submitted a formal expansion bid. NHL President Clarence Campbell said during the 1967 expansion meetings that, "We want a team in St. Louis because of the city's geographical location and the fact that it has an adequate building."</p>
+				<p>The team's first owners were insurance tycoon Sid Salomon Jr., his son, Sid Salomon III, and Robert L. Wolfson, who were granted the franchise in 1966. Sid Salomon III convinced his initially wary father to make a bid for the team. Former St. Louis Cardinals great Stan Musial and Musial's business partner Julius "Biggie" Garagnani were also members of the 16-man investment group that made the initial formal application for the franchise.</p>
+				<p>Garagnani would never see the Blues franchise take the ice, as he died from a heart attack on June 19, 1967, less than three months before the Blues played their first preseason game.</p>
+				<p>Upon acquiring the franchise in 1966, Salomon then spent several million dollars on extensive renovations for the 38-year-old arena, which increased the number of seats from 12,000 to 15,000.</p>
+			</div>
+		</div>
+
+		<!-- footer -->
+		<div data-role="footer" data-position="inline">
+			<div class="ui-body center-wrapper">
+				<a href="index.html" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-icon-left ui-icon-home">Home</a>
+			</div>
+		</div>
+
+	</div>
+
+	<!-- third page / forwards -->
+	<div data-role="page" class="ui-page-theme-a" id="line">
+
+		<!-- header -->
+		<div data-role="header" data-theme="a" id="headerBar">
+			<div class="ui-grid-b">
+				<div class="ui-block-a center-wrapper">
+					<div class="center-wrapper" style="height:70px">
+
+						<div class="ui-grid-a">
+							<div class="ui-block-a center-wrapper no-padding">
+								<div class="ui-bar center-wrapper no-padding" style="height:70px">
+									<img src="img/stlblues.png" alt="blues logo" id="headerLogo">
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<div class="ui-block-b">
+					<div class="center-wrapper" style="height:70px">
+						<h1 id="headerH1">St Louis Blues</h1>
+					</div>
+				</div>
+				<div class="ui-block-c">
+					<div class="center-wrapper" style="height:70px">
+
+						<div class="ui-grid-a">
+							<div class="ui-block-a center-wrapper no-padding"></div>
+							<div class="ui-block-b center-wrapper no-padding">
+								<div class="ui-bar center-wrapper no-padding" style="height:70px">
+									<a href="#popupLogin" data-role="button" data-rel="popup"  class="ui-btn ui-btn-inline ui-icon-check ui-btn-icon-left ui-bar" data-transition="flow" id="signinBtn">Sign in</a>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+
+			<div data-role="popup" id="popupLogin" data-theme="a" class="ui-corner-all">
+				<form>
+					<div style="padding:10px 20px;">
+						<h3>Please sign in</h3>
+						<label for="un" class="ui-hidden-accessible">Username:</label>
+						<input type="text" name="user" id="un" value="" placeholder="username" data-theme="a">
+						<label for="pw" class="ui-hidden-accessible">Password:</label>
+						<input type="password" name="pass" id="pw" value="" placeholder="password" data-theme="a">
+						<button type="submit" class="ui-btn ui-corner-all ui-shadow ui-btn-icon-left ui-icon-check">Sign in</button>
+					</div>
+				</form>
+			</div>
+		</div>
+		<!-- /header -->
+
+		<!-- navbar -->
+		<div data-role="navbar">
+			<ul>
+				<li><a href="#home" id="home" data-icon="home">Home</a></li>
+				<li><a href="#hist" id="info" data-icon="info">History</a></li>
+				<li><a href="#line" id="user" data-icon="user" class="ui-btn-active ui-state-persist">Line 1</a></li>
+				<li><a href="#cal" id="calendar" data-icon="calendar">Schedule</a></li>
+			</ul>
+		</div>
+		<!-- /navbar -->
+
+		<!-- main -->
+		<div role="main" class="ui-content">
+			<div class="ui-bar center-wrapper">
+				<h2 class="titleH2">Line 1 Forwards</h2>
+			</div>
+			<div class="ui-bar"></div>
+
+			<div data-role="collapsibleset" data-theme="a" data-content-theme="a">
+				<!-- perron -->
+				<div data-role="collapsible">
+					<h3>57 David Perron</h3>
+					<div>
+						<img src="img/perron.jpg" alt="perron" />
+						<div class="inline-block">
+							<table data-role="table" id="perron-table" data-mode="reflow" class="ui-responsive player-table">
+								<thead>
+									<tr>
+										<th>Position</th>
+										<td>Left Wing</td>
+										<th>Games Played</th>
+										<td>3</td>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<th>Shoots</th>
+										<td>Right</td>
+										<th>Goals</th>
+										<td>0</td>
+									</tr>
+									<tr>
+										<th>Height/Weight</th>
+										<td>6-0, 200lb</td>
+										<th>Assits</th>
+										<td>0</td>
+									</tr>
+								</tbody>
+							</table>
+
+						</div>
+					</div>
+				</div>
+				<!-- steen -->
+				<div data-role="collapsible">
+					<h3>20 Alex Steen</h3>
+					<div>
+						<img src="img/steen.jpg" alt="steen" />
+						<div class="inline-block">
+							<table data-role="table" id="steen-table" data-mode="reflow" class="ui-responsive player-table">
+								<thead>
+									<tr>
+										<th>Position</th>
+										<td>Center</td>
+										<th>Games Played</th>
+										<td>3</td>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<th>Shoots</th>
+										<td>Left</td>
+										<th>Goals</th>
+										<td>1</td>
+									</tr>
+									<tr>
+										<th>Height/Weight</th>
+										<td>5-11, 212lb</td>
+										<th>Assits</th>
+										<td>3</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+				<!-- tarasenko -->
+				<div data-role="collapsible">
+					<h3>91 Vladimir Tarasenko</h3>
+					<div>
+						<img src="img/tarasenko.jpg" alt="tarasenko" />
+						<div class="inline-block">
+							<table data-role="table" id="tarasenko-table" data-mode="reflow" class="ui-responsive player-table">
+								<thead>
+									<tr>
+										<th>Position</th>
+										<td>Right Wing</td>
+										<th>Games Played</th>
+										<td>3</td>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<th>Shoots</th>
+										<td>Left</td>
+										<th>Goals</th>
+										<td>3</td>
+									</tr>
+									<tr>
+										<th>Height/Weight</th>
+										<td>6-0, 219lb</td>
+										<th>Assits</th>
+										<td>2</td>
+									</tr>
+								</tbody>
+							</table>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- /main -->
+
+		<!-- footer -->
+		<div data-role="footer" data-position="fixed">
+			<div class="ui-body center-wrapper">
+				<a href="index.html" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-icon-left ui-icon-home">Home</a>
+			</div>
+		</div>
+		<!-- /footer -->
+
+	</div>
+
+	<!-- fourth page / schedule -->
+	<div data-role="page" class="ui-page-theme-a" id="cal">
+
+		<!-- header -->
+		<div data-role="header" data-theme="a" id="headerBar">
+			<div class="ui-grid-b">
+				<div class="ui-block-a center-wrapper">
+					<div class="center-wrapper" style="height:70px">
+
+						<div class="ui-grid-a">
+							<div class="ui-block-a center-wrapper no-padding">
+								<div class="ui-bar center-wrapper no-padding" style="height:70px">
+									<img src="img/stlblues.png" alt="blues logo" id="headerLogo">
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<div class="ui-block-b">
+					<div class="center-wrapper" style="height:70px">
+						<h1 id="headerH1">St Louis Blues</h1>
+					</div>
+				</div>
+				<div class="ui-block-c">
+					<div class="center-wrapper" style="height:70px">
+
+						<div class="ui-grid-a">
+							<div class="ui-block-a center-wrapper no-padding"></div>
+							<div class="ui-block-b center-wrapper no-padding">
+								<div class="ui-bar center-wrapper no-padding" style="height:70px">
+									<a href="#popupLogin" data-role="button" data-rel="popup"  class="ui-btn ui-btn-inline ui-icon-check ui-btn-icon-left ui-bar" data-transition="flow" id="signinBtn">Sign in</a>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+
+			<div data-role="popup" id="popupLogin" data-theme="a" class="ui-corner-all">
+				<form>
+					<div style="padding:10px 20px;">
+						<h3>Please sign in</h3>
+						<label for="un" class="ui-hidden-accessible">Username:</label>
+						<input type="text" name="user" id="un" value="" placeholder="username" data-theme="a">
+						<label for="pw" class="ui-hidden-accessible">Password:</label>
+						<input type="password" name="pass" id="pw" value="" placeholder="password" data-theme="a">
+						<button type="submit" class="ui-btn ui-corner-all ui-shadow ui-btn-icon-left ui-icon-check">Sign in</button>
+					</div>
+				</form>
+			</div>
+		</div>
+		<!-- /header -->
+
+		<!-- navbar -->
+		<div data-role="navbar">
+			<ul>
+				<li><a href="#home" id="home" data-icon="home">Home</a></li>
+				<li><a href="#hist" id="info" data-icon="info">History</a></li>
+				<li><a href="#line" id="user" data-icon="user">Line 1</a></li>
+				<li><a href="#cal" id="calendar" data-icon="calendar" class="ui-btn-active ui-state-persist">Schedule</a></li>
+			</ul>
+		</div>
+		<!-- /navbar -->
+
+		<!-- main -->
+		<div role="main" class="ui-content">
+			<div class="ui-bar">
+				<h1>Upcoming Schedule</h1>
+			</div>
+
+			<div class="ui-bar"></div>
+
+			<div class="ui-body">
+				<table data-role="table" id="schedule-table" data-mode="reflow" class="ui-responsive table-stroke">
+					<thead>
+						<tr></tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>Today</td>
+							<td>&#64;</td>
+							<th>Oilers</th>
+							<td>8:00 PM</td>
+						</tr>
+						<tr>
+							<td>Sat, Oct 22</td>
+							<td>&#64;</td>
+							<th>Flames</th>
+							<td>8:00 PM</td>
+						</tr>
+						<tr>
+							<td>Tue, Oct 25</td>
+							<td>vs</td>
+							<th>Flames</th>
+							<td>8:00 PM</td>
+						</tr>
+						<tr>
+							<td>Thu, Oct 27</td>
+							<td>vs</td>
+							<th>Red Wings</th>
+							<td>8:00 PM</td>
+						</tr>
+						<tr>
+							<td>Sat, Oct 29</td>
+							<td>vs</td>
+							<th>Kings</th>
+							<td>8:00 PM</td>
+						</tr>
+						<tr>
+							<td>Tue, Nov 1</td>
+							<td>&#64;</td>
+							<th>Rangers</th>
+							<td>8:00 PM</td>
+						</tr>
+
+					</tbody>
+				</table>
+			</div>
+		</div>
+		<!-- /main -->
+
+		<!-- footer -->
+		<div data-role="footer" data-position="fixed">
+			<div class="ui-body center-wrapper">
+				<a href="index.html" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-icon-left ui-icon-home">Home</a>
+			</div>
+		</div>
+		<!-- /footer -->
+
+	</div>
+
+</body>
+</html>
