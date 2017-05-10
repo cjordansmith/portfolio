@@ -10,9 +10,11 @@
 
   <!-- stylesheets -->
 
-  <link href="./css/bootstrap.css" rel="stylesheet">
+  <link href="./css/bootstrap.min.css" rel="stylesheet">
   <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link href="./css/propeller.css" rel="stylesheet">
+  <link href="./css/propeller.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/4f6a4b08efdad6bb29f9cc801f5c07e263b39907/devicon.min.css">
+
   <link href="./css/styles.css" rel="stylesheet">
 
   <!-- javascripts -->
@@ -28,12 +30,12 @@
           <a href="./index.html"><h2 class="color-white">cJordanSmith</h2></a>
           <nav>
             <ul class="nav-ul">
-              <a href="./index.html"><li class="nav-li color-green">Home</li></a>
-              <a href="./apps.html"><li class="nav-li">Apps</li></a>
-              <a href="./sites.html"><li class="nav-li">Sites</li></a>
-              <a href="./assets/resume/SmithJordan.pdf"><li class="nav-li">Resume</li></a>
-              <a href="https://github.com/cjordansmith"><li class="nav-li">GitHub</li></a>
-              <a href="#contact"><li class="nav-li nav-li-last">Contact</li></a>
+              <li class="nav-li"><a href="./index.html" class="color-green">Home</a></li>
+              <li class="nav-li"><a href="./apps.html">Apps</a></li>
+              <li class="nav-li"><a href="./sites.html">Sites</a></li>
+              <li class="nav-li"><a href="./assets/resume/SmithJordan.pdf">Resume</a></li>
+              <li class="nav-li"><a href="https://github.com/cjordansmith">GitHub</a></li>
+              <li class="nav-li nav-li-last"><a href="#contact">Contact</a></li>
             </ul>
           </nav>
         </div>
@@ -46,28 +48,31 @@
     <div class="row cover-main">
         <div class="cover-title">
           <div >
-            <h1>maker of <span class="color-green">fun</span> stuff</h1>
+            <h1>hi<span class="color-green">,</span> i<span class="color-green">'</span>m jordan</h1>
           </div>
         </div>
-        <div class="cover-bar">
-          <div class="l-bracket color-4">
-            &#60;
-          </div>
-          <div class="r-bracket color-4">
-            &#62;
-          </div>
+        <div class="gradient-blue">
+  				<div class="cover-bar">
+						<div class="l-bracket">
+							&#60;
+						</div>
+						<div class="r-bracket">
+							&#62;
+						</div>
+					</div>
         </div>
         <div class="cover-tag">
           <div class="container container-fluid">
             <h4>developer - designer - builder</h4>
           </div>
         </div>
-        <i class="fa fa-chevron-circle-down" aria-hidden="true"></i>
+
+        <i class="fa fa-chevron-circle-down hover-rotate" aria-hidden="true"></i>
     </div>
   </main>
 
   <!-- contact form section -->
-  <section id="contact" class="home-contact bg-color-1">
+  <section id="contact" class="home-contact">
 
     <div class="row">
       <header class="col-xs-12">
@@ -81,17 +86,17 @@
 				<form action="https://formspree.io/cjordansmith@gmail.com" method="POST">
 					<div class="form-group pmd-textfield pmd-textfield-floating-label">
 						<label for="fname">first name</label>
-						<input id="fname" name="fname" class="form-control" type="text" />
+						<input id="fname" name="fname" class="form-control" type="text" required />
 						<span class="pmd-textfield-focused"></span>
 					</div>
 					<div class="form-group pmd-textfield pmd-textfield-floating-label">
 						<label for="lname">last name</label>
-						<input id="lname" name="lname" class="form-control" type="text" />
+						<input id="lname" name="lname" class="form-control" type="text" required/>
 						<span class="pmd-textfield-focused"></span>
 					</div>
 					<div class="form-group pmd-textfield pmd-textfield-floating-label">
 						<label for="email">email</label>
-						<input id="email" name="email" class="form-control" type="text" />
+						<input id="email" name="email" class="form-control" type="text" required/>
 						<span class="pmd-textfield-focused"></span>
 					</div>
 					<div class="form-group pmd-textfield pmd-textfield-floating-label">
@@ -115,21 +120,21 @@
         </p>
         <h3 class="color-4">social</h3>
         <p class="social-icons">
-          <a href="/"><i class="fa fa-github" aria-hidden="true"></i></a>
-          <a href="/"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-          <a href="/"><i class="fa fa-codepen" aria-hidden="true"></i></a>
+          <a href="/"><i class="fa fa-github i-transition" aria-hidden="true"></i></a>
+          <a href="/"><i class="fa fa-linkedin i-transition" aria-hidden="true"></i></a>
+          <a href="/"><i class="fa fa-codepen i-transition" aria-hidden="true"></i></a>
         </p>
       </div>
     </div>
 
   </section>
 
-  <footer class="main-footer bg-color-4">
+  <footer class="main-footer">
     <div class="row">
       <div class="col-xs-12 footer-info">
         <ul>
           <li>
-            @ Jordan Smith 2017
+            <span class="color-green">@</span> Jordan Smith 2017
           </li>
           <li>
             <a href="./assets/resume/SmithJordan.pdf">view resume</a>
@@ -147,6 +152,5 @@
   <!-- Include all compiled plugins (below), or include individual files as needed -->
   <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
   <script type="text/javascript" src="js/propeller.min.js"></script>
-
 </body>
 </html>

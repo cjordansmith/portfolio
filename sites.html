@@ -10,9 +10,9 @@
 
   <!-- stylesheets -->
 
-  <link href="./css/bootstrap.css" rel="stylesheet">
+  <link href="./css/bootstrap.min.css" rel="stylesheet">
   <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link href="./css/propeller.css" rel="stylesheet">
+  <link href="./css/propeller.min.css" rel="stylesheet">
   <link href="./css/styles.css" rel="stylesheet">
 
   <!-- javascripts -->
@@ -28,12 +28,12 @@
           <a href="./index.html"><h2 class="color-white">cJordanSmith</h2></a>
           <nav>
             <ul class="nav-ul">
-              <a href="./index.html"><li class="nav-li">Home</li></a>
-              <a href="./apps.html"><li class="nav-li">Apps</li></a>
-              <a href="./sites.html"><li class="nav-li color-green">Sites</li></a>
-              <a href="./assets/resume/SmithJordan.pdf"><li class="nav-li">Resume</li></a>
-              <a href="https://github.com/cjordansmith"><li class="nav-li">GitHub</li></a>
-              <a href="./index.html#contact"><li class="nav-li nav-li-last">Contact</li></a>
+              <li class="nav-li"><a href="./index.html">Home</a></li>
+              <li class="nav-li"><a href="./apps.html" class="color-green">Apps</a></li>
+              <li class="nav-li"><a href="./sites.html" class="text-dnavy">Sites</a></li>
+              <li class="nav-li"><a href="./assets/resume/SmithJordan.pdf">Resume</a></li>
+              <li class="nav-li"><a href="https://github.com/cjordansmith">GitHub</a></li>
+              <li class="nav-li nav-li-last"><a href="./index.html#contact">Contact</a></li>
             </ul>
           </nav>
         </div>
@@ -46,12 +46,13 @@
     <header class="row">
       <div class="col-md-6 col-md-offset-3">
         <div class="page-header">
-          <h4>My sites</h4>
+          <h4>my sites</h4>
         </div>
       </div>
     </header>
 
     <div class="row">
+
       <div class="col-md-6 app-card">
         <!--Title, Media, and Action area -->
         <div class="pmd-card pmd-card-media-inline pmd-z-depth">
@@ -59,9 +60,10 @@
             <div class="pmd-card-media">
             	<!-- Card media heading -->
                 <div class="media-body">
-                    <h2 class="pmd-card-title-text">iZooky</h2>
-                    <span class="card-url">https://www.github.com/cjordansmith/app_name</span>
-                    <span class="pmd-card-subtitle-text">Description of the app and the technologies that were used to create it. Description of the app and the technologies that were used to create it.</span>
+                    <h2 class="pmd-card-title-text">iZooky - Static</h2>
+                    <a href="https://www.izooky.com/" class="card-url">https://www.izooky.com/</a>
+                    <br />
+                    <span class="pmd-card-subtitle-text">Website service designed to connect users with online help for anything they need, spanning from home repair to medical help.</span>
                 </div>
                 <!-- Card media image -->
                 <div class="media-right media-middle">
@@ -80,9 +82,10 @@
             <div class="pmd-card-media">
             	<!-- Card media heading -->
                 <div class="media-body">
-                    <h2 class="pmd-card-title-text">Web Dev &amp; Digital Media</h2>
-                    <span class="card-url">https://www.github.com/cjordansmith/app_name</span>
-                    <span class="pmd-card-subtitle-text">Description of the app and the technologies that were used to create it. Description of the app and the technologies that were used to create it.</span>
+                    <h2 class="pmd-card-title-text">WDDM - Static/Node.js</h2>
+                    <a href="https://www.izooky.com/" class="card-url">https://wddm.web.csit.jccc.edu/wordpress/</a>
+                    <br />
+                    <span class="pmd-card-subtitle-text">Homepage for the Web Development and Digital Media program at Johnson County Community College.</span>
                 </div>
                 <!-- Card media image -->
                 <div class="media-right media-middle">
@@ -93,12 +96,18 @@
             </div>
         </div>
       </div>
-    </div>
+
+
+
+
+
+
+
 
     <header class="row">
       <div class="col-md-6 col-md-offset-3">
         <div class="page-header">
-          <h4>School projects</h4>
+          <h4>school projects</h4>
         </div>
       </div>
     </header>
@@ -108,37 +117,37 @@
 
         <div class="project-info">
           <h2 class="pmd-card-title-text project-title">
-            <a href="./assets/projects/ch-zengarden/index.html" class="project-title-link">Calvin and Hobbes - CSS Zen Garden</a>
+            <a href="./assets/projects/ch-zengarden/index.html" class="project-title-link school-h2">Calvin and Hobbes - CSS Zen Garden</a>
           </h2>
-          <div class="project-github">
-            <a href="./assets/projects/ch-zengarden/index.html" class="card-url">https://www.github.com/cjordansmith/app_name</a>
+          <div class="project-link">
+            <a href="./assets/projects/ch-zengarden/index.html" class="card-url school-a">https://www.github.com/cjordansmith/ch-zengarden</a>
           </div>
         </div>
 
         <div class="project-info">
           <h2 class="pmd-card-title-text project-title">
-            <a href="./assets/projects/cjk/index.html" class="project-title-link">CjK - jQuery mobile</a>
+            <a href="./assets/projects/cjk/index.html" class="project-title-link school-h2">CjK - jQuery mobile</a>
           </h2>
-          <div class="project-github">
-            <a href="./assets/projects/ch-zengarden/index.html" class="card-url">https://www.github.com/cjordansmith/app_name</a>
+          <div class="project-link">
+            <a href="./assets/projects/cjk/index.html" class="card-url school-a">https://www.github.com/cjordansmith/cjk-mobile</a>
           </div>
         </div>
 
         <div class="project-info">
           <h2 class="pmd-card-title-text project-title">
-            <a href="./assets/projects/blues/index.html" class="project-title-link">STL Blues - jQuery mobile</a>
+            <a href="./assets/projects/blues/index.html" class="project-title-link school-h2">STL Blues - jQuery mobile</a>
           </h2>
-          <div class="project-github">
-            <a href="./assets/projects/ch-zengarden/index.html" class="card-url">https://www.github.com/cjordansmith/app_name</a>
+          <div class="project-link">
+            <a href="./assets/projects/blues/index.html" class="card-url school-a">https://www.github.com/cjordansmith/stl-jquery</a>
           </div>
         </div>
 
         <div class="project-info">
           <h2 class="pmd-card-title-text project-title">
-            <a href="./assets/projects/html1/final1.html" class="project-title-link">HTML 1 final</a>
+            <a href="./assets/projects/html1/final1.html" class="project-title-link school-h2">HTML 1 final</a>
           </h2>
-          <div class="project-github">
-            <a href="./assets/projects/ch-zengarden/index.html" class="card-url">https://www.github.com/cjordansmith/app_name</a>
+          <div class="project-link">
+            <a href="./assets/projects/html1/final1.html" class="card-url school-a">https://www.github.com/cjordansmith/html1-final</a>
           </div>
         </div>
 
@@ -152,7 +161,7 @@
       <div class="col-xs-12 footer-info">
         <ul>
           <li>
-            @ Jordan Smith 2017
+            <span class="color-green">@</span> Jordan Smith 2017
           </li>
           <li>
             <a href="./assets/resume/SmithJordan.pdf">view resume</a>
