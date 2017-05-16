@@ -20,6 +20,7 @@
   <!-- javascripts -->
   <script src="https://use.fontawesome.com/f4a0e4e740.js"></script>
 
+
 </head>
 <body>
   <!-- main header -->
@@ -30,7 +31,6 @@
           <a href="./index.html"><h2 class="color-white">cJordanSmith</h2></a>
           <nav>
             <ul class="nav-ul">
-              <li class="nav-li"><a href="./index.html" class="color-green">Home</a></li>
               <li class="nav-li"><a href="./apps.html">Apps</a></li>
               <li class="nav-li"><a href="./sites.html">Sites</a></li>
               <li class="nav-li"><a href="./assets/resume/SmithJordan.pdf">Resume</a></li>
@@ -44,20 +44,21 @@
   </header>
 
   <!-- cover page main section -->
-  <main class="container cover">
+  <main class=" cover">
     <div class="row cover-main">
         <div class="cover-title">
           <div >
-            <h1>hi<span class="color-green">,</span> i<span class="color-green">'</span>m jordan</h1>
+            <h1>hi<span style="color: var(--lblue);">,</span> i<span style="color: var(--lblue);">'</span>m jordan</h1>
           </div>
         </div>
         <div class="gradient-blue">
+					<canvas id="canvas-basic"></canvas>
   				<div class="cover-bar">
 						<div class="l-bracket">
-							&#60;
+					  	&#123;
 						</div>
 						<div class="r-bracket">
-							&#62;
+							&#125;
 						</div>
 					</div>
         </div>
@@ -67,13 +68,19 @@
           </div>
         </div>
 
-        <i class="fa fa-chevron-circle-down hover-rotate" aria-hidden="true"></i>
+        <i class="fa fa-chevron-circle-down hover-rotate down-icon" aria-hidden="true"></i>
     </div>
   </main>
 
+
+
+
+
   <!-- contact form section -->
   <section id="contact" class="home-contact">
-
+		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
+    	<polygon fill="#48A5E7" points="0,0 0,100 100,0"/>
+  	</svg>
     <div class="row">
       <header class="col-xs-12">
         <h3 class="color-4">contact</h3>
@@ -147,10 +154,14 @@
     </div>
   </footer>
 
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+	<script type="text/javascript" src="js/granim.js"></script>
   <!-- javascripts --><!-- jQuery before Propeller.js -->
-  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <!--<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>-->
   <!-- Include all compiled plugins (below), or include individual files as needed -->
   <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
   <script type="text/javascript" src="js/propeller.min.js"></script>
+	<script type="text/javascript" src="js/code.js"></script>
+
 </body>
 </html>

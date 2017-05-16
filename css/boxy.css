@@ -1,0 +1,26 @@
+
+
+body {
+	vh: 100%;
+}
+
+
+.tile.is-ancestor {
+		height: 100vh;
+		max-height: 100vh;
+		margin: 0;
+}
+
+.tile-no-padding {
+	padding: 0;
+}
+.tile.is-parent .tile-no-padding {
+	padding: 0;
+}
+.tile.is-child .tile-no-margin {
+	margin: 0;
+	margin-bottom: 0px;
+}
+.tile.is-child.notification.is-primary.tile-no-margin {
+	margin: 0px !important;
+}
