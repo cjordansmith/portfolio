@@ -19,10 +19,10 @@
 	--dblue: #097CCD;
   --dnavy: #044776;
 	--green: #29FF9F;
-  --white:  #ffffff;
+  --white:  #f1f1f1;
   --black: #3e3e40;
   --navy: #333c4e;
-  --gray: #959696;
+  --gray: #A7A9AC;
   --lime: #29FF9F;
   --lime2: #48e8e4;
 
@@ -78,7 +78,7 @@ h4 {
 
 
 .text-black { color: var(--black); }
-.text-gray-1 { color: var(--navy); opacity: 0.54;}
+.text-gray-1 { color: var(--black); opacity: 0.54;}
 .text-gray { color: var(--gray); }
 
 .bg-white { background-color: var(--white); }
@@ -159,6 +159,7 @@ h4 {
 /* ==========  cover styles  ========== */
 .cover {
   height: calc(100vh - 59px);
+	max-height: 800px;
 	position: relative;
   display: flex;
   flex: 1 1 auto;
@@ -168,7 +169,8 @@ h4 {
 }
 
 .gradient-blue {
-
+	margin-top: 40px;
+	margin-bottom: 40px;
 	position: relative;
 	width: 100vw;
 	height: 140px;
@@ -184,9 +186,6 @@ h4 {
   background-image: url("../assets/images/hooly.png");
   background-repeat: no-repeat;
   background-position: center;
-  display: grid;
-  grid-template-columns: [l-bracket] 1fr [r-bracket] 1fr;
-  grid-template-rows: [main] 140px;
 }
 .cover-main {
 	margin-top: -12vh;
@@ -197,38 +196,37 @@ h4 {
 	position: absolute;
 	left: 0;
 	top: 0;
+
 }
 .l-bracket {
-  grid-area: l-bracket main;
-  margin-right: 2vw;
 }
 .r-bracket {
-  grid-area: r-bracket main;
-	margin-left: 2vw;
 }
 .l-bracket, .r-bracket {
-  font-size: 18vw;
+  font-size: 26vw;
   font-weight: 700;
+	margin-top: -11vw;
   line-height: 1;
-  margin-top: -4.5vw;
 	padding: 0;
-	align-self: center;
   text-align: center;
-  color: var(--dnavy);
+  color: var(--black);
 	z-index: 999999;
+	border: 1px solid #000;
 }
 .cover .cover-title,
 .cover .cover-tag  {
   text-align: center;
 }
 .cover .cover-title h1 {
-  font-size: 64px;
+  font-size: 6rem;
   line-height: 1;
+	letter-spacing: 2px;
   font-family: 'Fira Sans', sans-serif;
   font-weight: 700;
 }
 .cover .cover-tag h4 {
-  font-size: 22px;
+  font-size: 1.6rem;
+	letter-spacing: 2px;
   line-height: 1;
   font-family: 'Quicksand', sans-serif;
   font-weight: 300;
@@ -241,15 +239,15 @@ h4 {
   left: calc(50% - 25px);
 	z-index: 9999;
 }
-/*.cover-main > i:hover {
+.cover-main > i:hover {
   cursor: pointer;
   transition: transform 2s;
 }
 
 .hover-rotate:hover {
   -webkit-transform: rotateY(180deg); /* Safari */
-  /*transform: rotateY(180deg);
-}*/
+  transform: rotateY(180deg);
+}
 
 /* ==========  granim gradients  ========== */
 
@@ -289,9 +287,35 @@ h4 {
   background: var(--lblue);
 	position: relative;
 }
+.home-about {
+	background-image: url("../assets/images/stardust.png");
+	background-repeat: repeat;
+	background-position: center center;
+	position: relative;
+	padding-top: 130px;
+	height: 600px;
+	clip-path: polygon(0% 0%, 100% 4em, 100% calc(100% - 7em), 0% 100%);
+}
+.home-about p {
+	font-size: 1.3em;
+	line-height: 3;
+}
 
-
-.home-contact > .row > header {
+.bg-cont {
+	clip-path: polygon(0% 0%, 100% 4em, 100% 100%, 0% 100%);
+}
+svg.svg-top {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+svg.svg-bottom {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+.home-contact > .row > header,
+.home-about > .row > header {
   text-align: center;
 }
 .pmd-textfield label {
@@ -299,7 +323,7 @@ h4 {
   font-weight: 400;
 }
 .pmd-textfield-floating-label.pmd-textfield-floating-label-completed label {
-  color: var(--dgray);
+  color: var(--black);
   opacity: 0.65;
   font-weight: 400;
 }
@@ -313,15 +337,18 @@ h4 {
 .contact-info h3 {
   font-weight: 500;
   letter-spacing: normal;
+	letter-spacing: 0.5px;
 }
 .form-control {
-  color: var(--dnavy);
+  color: var(--black);
   font-weight: 600;
 }
 
 /* ==========  footer styles  ========== */
 .main-footer {
-  background: var(--dnavy);
+	background: var(--mblue);
+	background-repeat: repeat;
+	background-position: center center;
 }
 .footer-info {
   font-size: 12px;
@@ -340,12 +367,13 @@ h4 {
 }
 p.location {
   margin-bottom: 40px;
+	color: var(--white)
 }
 .social-icons a {
   font-size: 30px;
   display: inline-block;
   margin: 12px 22px;
-  color: var(--dnavy);
+  color: var(--white);
 }
 
 .i-transition {
@@ -455,13 +483,13 @@ img.preview {
   line-height: 22px;
 }
 a.local-a {
-  color: var(--dnavy);
+  color: var(--black);
   font-size: 13px;
   font-weight: 500;
   line-height: 22px;
 }
 
 a.school-a {
-  color: var(--dnavy);
+  color: var(--black);
   font-size: 13epx;
 }

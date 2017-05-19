@@ -28,7 +28,7 @@
     <div class="container">
       <div class="row">
         <div class="col-xs-12 header-nav">
-          <a href="./index.html"><h2 class="color-white">cJordanSmith</h2></a>
+          <a href="./index.html"><h2 class="color-white"><span class="color-green">c</span>JordanSmith</h2></a>
           <nav>
             <ul class="nav-ul">
               <li class="nav-li"><a href="./apps.html">Apps</a></li>
@@ -47,19 +47,12 @@
   <main class=" cover">
     <div class="row cover-main">
         <div class="cover-title">
-          <div >
-            <h1>hi<span style="color: var(--lblue);">,</span> i<span style="color: var(--lblue);">'</span>m jordan</h1>
-          </div>
+            <h1>hi<span style="color: var(--green);">,</span> i<span style="color: var(--green);">'</span>m jordan</h1>
         </div>
         <div class="gradient-blue">
 					<canvas id="canvas-basic"></canvas>
   				<div class="cover-bar">
-						<div class="l-bracket">
-					  	&#123;
-						</div>
-						<div class="r-bracket">
-							&#125;
-						</div>
+
 					</div>
         </div>
         <div class="cover-tag">
@@ -72,69 +65,77 @@
     </div>
   </main>
 
+	<div style="background: var(--lblue);" class="bg-cont">
+		<section id="about" class="home-about">
 
+			<div class="row">
+	      <header class="col-xs-12 col-md-6 col-md-offset-3">
+	        <h3 class="color-green">about me</h3>
+					<p>
+						I am a web developer located in Kansas City, Missouri who enjoys building anything I can get my hands on. I can create anything from static personal sites to small-scale web applications. I primarily code in HTML, CSS, and JavaScript, with a few others thrown in here and there. If you are a business seeking a web presence or an employer looking to hire, you can get in touch with me below.
+					</p>
+	      </header>
+	    </div>
+		</section>
 
+	  <!-- contact form section -->
+	  <section id="contact" class="home-contact">
 
+	    <div class="row">
+	      <header class="col-xs-12">
+	        <h3 class="color-4">contact</h3>
+	        <h2 class="color-white">let's get in touch</h2>
+	      </header>
+	    </div>
 
-  <!-- contact form section -->
-  <section id="contact" class="home-contact">
-		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
-    	<polygon fill="#48A5E7" points="0,0 0,100 100,0"/>
-  	</svg>
-    <div class="row">
-      <header class="col-xs-12">
-        <h3 class="color-4">contact</h3>
-        <h2 class="color-white">let's get in touch</h2>
-      </header>
-    </div>
+	    <div class="row">
+	      <div class="col-md-4 col-md-offset-2">
+					<form action="https://formspree.io/cjordansmith@gmail.com" method="POST">
+						<div class="form-group pmd-textfield pmd-textfield-floating-label">
+							<label for="fname">first name</label>
+							<input id="fname" name="fname" class="form-control" type="text" required />
+							<span class="pmd-textfield-focused"></span>
+						</div>
+						<div class="form-group pmd-textfield pmd-textfield-floating-label">
+							<label for="lname">last name</label>
+							<input id="lname" name="lname" class="form-control" type="text" required/>
+							<span class="pmd-textfield-focused"></span>
+						</div>
+						<div class="form-group pmd-textfield pmd-textfield-floating-label">
+							<label for="email">email</label>
+							<input id="email" name="email" class="form-control" type="text" required/>
+							<span class="pmd-textfield-focused"></span>
+						</div>
+						<div class="form-group pmd-textfield pmd-textfield-floating-label">
+							<label class="control-label">comments</label>
+							<textarea class="form-control" name="comments" required=""></textarea>
+							<span class="pmd-textfield-focused"></span>
+						</div>
+						<button class="contact-btn btn btn-lg pmd-btn-raised pmd-ripple-effect btn-color-4" type="submit">send</button>
+					</form>
+				</div>
 
-    <div class="row">
-      <div class="col-md-4 col-md-offset-2">
-				<form action="https://formspree.io/cjordansmith@gmail.com" method="POST">
-					<div class="form-group pmd-textfield pmd-textfield-floating-label">
-						<label for="fname">first name</label>
-						<input id="fname" name="fname" class="form-control" type="text" required />
-						<span class="pmd-textfield-focused"></span>
-					</div>
-					<div class="form-group pmd-textfield pmd-textfield-floating-label">
-						<label for="lname">last name</label>
-						<input id="lname" name="lname" class="form-control" type="text" required/>
-						<span class="pmd-textfield-focused"></span>
-					</div>
-					<div class="form-group pmd-textfield pmd-textfield-floating-label">
-						<label for="email">email</label>
-						<input id="email" name="email" class="form-control" type="text" required/>
-						<span class="pmd-textfield-focused"></span>
-					</div>
-					<div class="form-group pmd-textfield pmd-textfield-floating-label">
-						<label class="control-label">comments</label>
-						<textarea class="form-control" name="comments" required=""></textarea>
-						<span class="pmd-textfield-focused"></span>
-					</div>
-					<button class="contact-btn btn btn-lg pmd-btn-raised pmd-ripple-effect btn-color-4" type="submit">send</button>
-				</form>
-			</div>
+	      <div class="col-md-4 contact-info">
+	        <h3 class="color-4">location</h3>
+	        <p class="location">
+	          kansas city, missouri<br />
+	          united states
+	        </p>
+	        <h3 class="color-4">email</h3>
+	        <p class="location">
+	          cjordansmith@gmail.com
+	        </p>
+	        <h3 class="color-4">social</h3>
+	        <p class="social-icons">
+	          <a href="/"><i class="fa fa-github i-transition" aria-hidden="true"></i></a>
+	          <a href="/"><i class="fa fa-linkedin i-transition" aria-hidden="true"></i></a>
+	          <a href="/"><i class="fa fa-codepen i-transition" aria-hidden="true"></i></a>
+	        </p>
+	      </div>
+	    </div>
 
-      <div class="col-md-4 contact-info">
-        <h3 class="color-4">location</h3>
-        <p class="location">
-          kansas city, missouri<br />
-          united states
-        </p>
-        <h3 class="color-4">email</h3>
-        <p class="location">
-          cjordansmith@gmail.com
-        </p>
-        <h3 class="color-4">social</h3>
-        <p class="social-icons">
-          <a href="/"><i class="fa fa-github i-transition" aria-hidden="true"></i></a>
-          <a href="/"><i class="fa fa-linkedin i-transition" aria-hidden="true"></i></a>
-          <a href="/"><i class="fa fa-codepen i-transition" aria-hidden="true"></i></a>
-        </p>
-      </div>
-    </div>
-
-  </section>
+	  </section>
+	</div>
 
   <footer class="main-footer">
     <div class="row">
