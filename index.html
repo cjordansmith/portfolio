@@ -1,167 +1,315 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Jordan Smith | Portfolio</title>
-  <link rel="shortcut icon" type="image/x-icon" href="./assets/images/hooly.ico">
+	<title>Jordan Smith | Portfolio</title>
+	<link rel="shortcut icon" type="image/x-icon" href="./assets/images/hooly.ico">
 
-  <!-- stylesheets -->
+	<!-- type fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Space+Mono:400,700" rel="stylesheet">
 
-  <link href="./css/bootstrap.min.css" rel="stylesheet">
-  <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link href="./css/propeller.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/4f6a4b08efdad6bb29f9cc801f5c07e263b39907/devicon.min.css">
+	<!-- icon fonts -->
+	<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/4f6a4b08efdad6bb29f9cc801f5c07e263b39907/devicon.min.css">
 
-  <link href="./css/styles.css" rel="stylesheet">
+	<!-- stylesheets -->
+	<link href="./css/bootstrap.min.css" rel="stylesheet">
+	<link href="./css/propeller.min.css" rel="stylesheet">
+	<link href="./css/styles.css" rel="stylesheet">
 
-  <!-- javascripts -->
-  <script src="https://use.fontawesome.com/f4a0e4e740.js"></script>
-
+	<!-- javascripts -->
+	<script src="https://use.fontawesome.com/f4a0e4e740.js"></script>
+	<script>
+		window.onload = function() {
+			Particles.init({
+				selector: '.particles',
+				color: '#f1f1f1',
+				speed: '0.2',
+				sizeVariations: 5,
+				maxParticles: 100
+			});
+		};
+	</script>
 
 </head>
 <body>
-  <!-- main header -->
-  <header class="header">
-    <div class="container">
-      <div class="row">
-        <div class="col-xs-12 header-nav">
-          <a href="./index.html"><h2 class="color-white"><span class="color-green">c</span>JordanSmith</h2></a>
-          <nav>
-            <ul class="nav-ul">
-              <li class="nav-li"><a href="./apps.html">Apps</a></li>
-              <li class="nav-li"><a href="./sites.html">Sites</a></li>
-              <li class="nav-li"><a href="./assets/resume/jordansmith-resume-20170605.pdf">Resume</a></li>
-              <li class="nav-li"><a href="https://github.com/cjordansmith">GitHub</a></li>
-              <li class="nav-li nav-li-last"><a href="#contact">Contact</a></li>
-            </ul>
-          </nav>
-        </div>
-      </div>
-    </div>
-  </header>
-
-  <!-- cover page main section -->
-  <main class=" cover">
-    <div class="row cover-main">
-        <div class="cover-title">
-            <h1>hi<span style="color: var(--green);">,</span> i<span style="color: var(--green);">'</span>m jordan</h1>
-        </div>
-        <div class="gradient-blue">
-					<canvas id="canvas-basic"></canvas>
-  				<div class="cover-bar">
-
-					</div>
-        </div>
-        <div class="cover-tag">
-          <div class="container container-fluid">
-            <h4>developer - designer - builder</h4>
-          </div>
-        </div>
-
-        <i class="fa fa-chevron-circle-down hover-rotate down-icon" aria-hidden="true"></i>
-    </div>
-  </main>
-
-	<div style="background: var(--lblue);" class="bg-cont">
-		<section id="about" class="home-about">
-
-			<div class="row">
-	      <header class="col-xs-12 col-md-6 col-md-offset-3">
-	        <h3 class="color-green">about me</h3>
-					<p>
-						I am a web developer located in Kansas City, Missouri who enjoys building anything I can get my hands on. I can create anything from static personal sites to small-scale web applications. I primarily code in HTML, CSS, and JavaScript, with a few others thrown in here and there. If you are a business seeking a web presence or an employer looking to hire, you can get in touch with me below.
-					</p>
-	      </header>
-	    </div>
-		</section>
-
-	  <!-- contact form section -->
-	  <section id="contact" class="home-contact">
-
-	    <div class="row">
-	      <header class="col-xs-12">
-	        <h3 class="color-4">contact</h3>
-	        <h2 class="color-white">let's get in touch</h2>
-	      </header>
-	    </div>
-
-	    <div class="row">
-	      <div class="col-md-4 col-md-offset-2">
-					<form action="https://formspree.io/cjordansmith@gmail.com" method="POST">
-						<div class="form-group pmd-textfield pmd-textfield-floating-label">
-							<label for="fname">first name</label>
-							<input id="fname" name="fname" class="form-control" type="text" required />
-							<span class="pmd-textfield-focused"></span>
-						</div>
-						<div class="form-group pmd-textfield pmd-textfield-floating-label">
-							<label for="lname">last name</label>
-							<input id="lname" name="lname" class="form-control" type="text" required/>
-							<span class="pmd-textfield-focused"></span>
-						</div>
-						<div class="form-group pmd-textfield pmd-textfield-floating-label">
-							<label for="email">email</label>
-							<input id="email" name="email" class="form-control" type="text" required/>
-							<span class="pmd-textfield-focused"></span>
-						</div>
-						<div class="form-group pmd-textfield pmd-textfield-floating-label">
-							<label class="control-label">comments</label>
-							<textarea class="form-control" name="comments" required=""></textarea>
-							<span class="pmd-textfield-focused"></span>
-						</div>
-						<button class="contact-btn btn btn-lg pmd-btn-raised pmd-ripple-effect btn-color-4" type="submit">send</button>
-					</form>
+	<div class="split-container">
+		<div class="half half-flex">
+			<canvas class="particles"></canvas>
+			<div class="cover-content">
+				<a href="/"><h3>cjordansmith</h3></a>
+				<div class="cover-text">
+					<h1>hi,<br />i'm jordan</h1>
+					<h2>developer - designer - builder</h2>
+					<button type="button" class="btn btn-lg pmd-btn-outline pmd-ripple-effect btn-cover">get in touch</button>
 				</div>
+				<div class="cover-social">
+					<a href="/"><i class="fa fa-github i-transition" aria-hidden="true"></i></a>
+					<a href="/"><i class="fa fa-linkedin i-transition" aria-hidden="true"></i></a>
+					<a href="/"><i class="fa fa-codepen i-transition" aria-hidden="true"></i></a>
+				</div>
+			</div>
+		</div>
 
-	      <div class="col-md-4 contact-info">
-	        <h3 class="color-4">location</h3>
-	        <p class="location">
-	          kansas city, missouri<br />
-	          united states
-	        </p>
-	        <h3 class="color-4">email</h3>
-	        <p class="location">
-	          cjordansmith@gmail.com
-	        </p>
-	        <h3 class="color-4">social</h3>
-	        <p class="social-icons">
-	          <a href="/"><i class="fa fa-github i-transition" aria-hidden="true"></i></a>
-	          <a href="/"><i class="fa fa-linkedin i-transition" aria-hidden="true"></i></a>
-	          <a href="/"><i class="fa fa-codepen i-transition" aria-hidden="true"></i></a>
-	        </p>
-	      </div>
-	    </div>
 
-	  </section>
-	</div>
+		<div class="half">
+			<div class="content-container">
 
-  <footer class="main-footer">
-    <div class="row">
-      <div class="col-xs-12 footer-info">
-        <ul>
-          <li>
-            <span class="color-green">@</span> Jordan Smith 2017
-          </li>
-          <li>
-            <a href="./assets/resume/jordansmith-resume-20170605.pdf">view resume</a>
-          </li>
-          <li>
-            <a href="https://github.com/cjordansmith">github</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </footer>
+				<div id="about" class="container-fluid section about">
+					<div class="section-container">
+						<header>
+							<h1>about me</h1>
+						</header>
+						<div>
+							<p>I am a web developer located in Kansas City, Missouri who enjoys building anything I can get my hands on. I can create anything from static personal sites to small-scale web applications. I primarily code in HTML, CSS, and JavaScript, with a few others thrown in here and there. If you are a business seeking a web presence or an employer looking to hire, you can get in touch with me below.</p>
+							<button type="button" class="btn btn-md pmd-btn-outline pmd-ripple-effect btn-cover btn-submit">view resume</button>
+						</div>
+					</div>
+				</div><!-- end .about -->
 
-	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-	<script type="text/javascript" src="js/granim.js"></script>
-  <!-- javascripts --><!-- jQuery before Propeller.js -->
-  <!--<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>-->
-  <!-- Include all compiled plugins (below), or include individual files as needed -->
-  <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-  <script type="text/javascript" src="js/propeller.min.js"></script>
+				<!-- websites section -->
+				<div id="websites" class="container-fluid section websites">
+					<div class="section-container">
+						<header>
+							<h1>websites</h1>
+						</header>
+
+						<div class="section-content">
+							<div class="project">
+								<header>
+									<a href="https://www.izooky.com/">iZooky - Static</a>
+									<a href="https://www.izooky.com/"><i class="devicon-github-plain colored icon-right"></i></a>
+								</header>
+								<div class="project-content">
+									<p>
+										Website service designed to connect users with online help for anything they need, spanning from home repair to medical help. Website service designed to connect users with online help for anything they need, spanning from home repair to medical help. Website service designed to connect users with online help for anything they need, spanning from home repair to medical help.
+									</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="section-content">
+							<div class="project">
+								<header>
+									<a href="https://wddm.web.csit.jccc.edu/wordpress/">WDDM - Static/Node.js</a>
+									<a href="https://wddm.web.csit.jccc.edu/wordpress/"><i class="devicon-github-plain colored icon-right"></i></a>
+								</header>
+								<div class="project-content">
+									<p>
+										Homepage for the Web Development and Digital Media program at Johnson County Community College. Homepage for the Web Development and Digital Media program at Johnson County Community College. Homepage for the Web Development and Digital Media program at Johnson County Community College.
+									</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="section-content">
+							<div class="project">
+								<header>
+									<a href="https://wddm.web.csit.jccc.edu/wordpress/">Calvin and Hobbes - CSS Zen Garden</a>
+									<a href="https://wddm.web.csit.jccc.edu/wordpress/"><i class="devicon-github-plain colored icon-right"></i></a>
+								</header>
+								<div class="project-content">
+									<p>
+										Homepage for the Web Development and Digital Media program at Johnson County Community College. Homepage for the Web Development and Digital Media program at Johnson County Community College. Homepage for the Web Development and Digital Media program at Johnson County Community College.
+									</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="section-content">
+							<div class="project">
+								<header>
+									<a href="https://wddm.web.csit.jccc.edu/wordpress/">CJK - jQuery Mobile</a>
+									<a href="https://wddm.web.csit.jccc.edu/wordpress/"><i class="devicon-github-plain colored icon-right"></i></a>
+								</header>
+								<div class="project-content">
+									<p>
+										Homepage for the Web Development and Digital Media program at Johnson County Community College. Homepage for the Web Development and Digital Media program at Johnson County Community College. Homepage for the Web Development and Digital Media program at Johnson County Community College.
+									</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="section-content">
+							<div class="project">
+								<header>
+									<a href="https://wddm.web.csit.jccc.edu/wordpress/">Stl Blues - jQuery Mobile</a>
+									<a href="https://wddm.web.csit.jccc.edu/wordpress/"><i class="devicon-github-plain colored icon-right"></i></a>
+								</header>
+								<div class="project-content">
+									<p>
+										Homepage for the Web Development and Digital Media program at Johnson County Community College. Homepage for the Web Development and Digital Media program at Johnson County Community College. Homepage for the Web Development and Digital Media program at Johnson County Community College.
+									</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="section-content">
+							<div class="project">
+								<header>
+									<a href="https://wddm.web.csit.jccc.edu/wordpress/">HTML 1 Class Final</a>
+									<a href="https://wddm.web.csit.jccc.edu/wordpress/"><i class="devicon-github-plain colored icon-right"></i></a>
+								</header>
+								<div class="project-content">
+									<p>
+										Homepage for the Web Development and Digital Media program at Johnson County Community College. Homepage for the Web Development and Digital Media program at Johnson County Community College. Homepage for the Web Development and Digital Media program at Johnson County Community College.
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div><!-- end .websites -->
+
+				<!-- apps section -->
+				<div id="apps" class="container-fluid section apps">
+					<div class="section-container">
+						<header>
+							<h1>apps</h1>
+						</header>
+
+						<div class="section-content">
+							<div class="project">
+								<header>
+									<a href="https://cjs-loc8r.herokuapp.com/">Loc8r - MEAN</a>
+									<a href="https://github.com/cjordansmith/loc8r"><i class="devicon-github-plain colored icon-right"></i></a>
+									<a href="https://cjs-loc8r.herokuapp.com/"><i class="devicon-heroku-plain colored"></i></a>
+								</header>
+								<div class="project-content">
+									<p>
+										Description of the app and the technologies that were used to create it. Description of the app and the technologies that were used to create it. Description of the app and the technologies that were used to create it. Description of the app and the technologies that were used to create it.
+									</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="section-content">
+							<div class="project">
+								<header>
+									<a href="https://fullstack-timers-app.herokuapp.com">Timers - React</a>
+									<a href="https://github.com/cjordansmith/timers_app/"><i class="devicon-github-plain colored icon-right"></i></a>
+									<a href="https://fullstack-timers-app.herokuapp.com"><i class="devicon-heroku-plain colored"></i></a>
+								</header>
+								<div class="project-content">
+									<p>
+										Description of the app and the technologies that were used to create it. Description of the app and the technologies that were used to create it. Description of the app and the technologies that were used to create it. Description of the app and the technologies that were used to create it.
+									</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="section-content">
+							<div class="project">
+								<header>
+									<a href="https://cjs-slips.herokuapp.com">Slips - MEAN</a>
+									<a href="https://github.com/cjordansmith/slips"><i class="devicon-github-plain colored icon-right"></i></a>
+									<a href="https://cjs-slips.herokuapp.com"><i class="devicon-heroku-plain colored"></i></a>
+								</header>
+								<div class="project-content">
+									<p>
+										Description of the app and the technologies that were used to create it. Description of the app and the technologies that were used to create it. Description of the app and the technologies that were used to create it. Description of the app and the technologies that were used to create it.
+									</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="section-content">
+							<div class="project">
+								<header>
+									<a href="https://cjs-learnaboutme.herokuapp.com/">Learn About Me - MEAN</a>
+									<a href="https://fullstack-timers-app.herokuapp.com/"><i class="devicon-github-plain colored icon-right"></i></a>
+									<a href="https://cjs-learnaboutme.herokuapp.com/"><i class="devicon-heroku-plain colored"></i></a>
+								</header>
+								<div class="project-content">
+									<p>Basic social media app built with Node.js and Express. Allows users to sign up and leave comments.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- still need to add: Uploadr, Guest Book, Temperature Finder -->
+				</div><!-- end .apps -->
+
+				<!-- contact section -->
+				<div id="contact" class="container-fluid section contact">
+					<div class="section-container">
+						<header>
+							<h1>contact</h1>
+						</header>
+						<form action="https://formspree.io/cjordansmith@gmail.com" method="POST">
+							<div class="form-group pmd-textfield pmd-textfield-floating-label">
+								<label for="fname">first name</label>
+								<input id="fname" name="fname" class="form-control" type="text" required />
+								<span class="pmd-textfield-focused"></span>
+							</div>
+							<div class="form-group pmd-textfield pmd-textfield-floating-label">
+								<label for="lname">last name</label>
+								<input id="lname" name="lname" class="form-control" type="text" required/>
+								<span class="pmd-textfield-focused"></span>
+							</div>
+							<div class="form-group pmd-textfield pmd-textfield-floating-label">
+								<label for="email">email</label>
+								<input id="email" name="email" class="form-control" type="text" required/>
+								<span class="pmd-textfield-focused"></span>
+							</div>
+							<div class="form-group pmd-textfield pmd-textfield-floating-label">
+								<label class="control-label">comments</label>
+								<textarea class="form-control" name="comments" required=""></textarea>
+								<span class="pmd-textfield-focused"></span>
+							</div>
+							<button type="submit" class="btn btn-md pmd-btn-outline pmd-ripple-effect btn-cover btn-submit">send</button>
+						</form>
+
+						<div class="contact-info">
+							<div class="contact-text">
+								<h3>location</h3>
+								<p class="location">kansas city, missouri<br />united states</p>
+							</div>
+							<div class="contact-text">
+								<h3>email</h3>
+								<p class="location">cjordansmith@gmail.com</p>
+							</div>
+						</div>
+					</div>
+				</div><!-- end .contact -->
+
+				<footer class="main-footer">
+					<div class="section-container">
+						<div class="footer-info">
+							<ul>
+								<li><span class="text-green">@</span> Jordan Smith 2017</li>
+								<li><a href="./assets/resume/jordansmith-resume-20170605.pdf">view resume</a></li>
+								<li><a href="https://github.com/cjordansmith">github</a></li>
+							</ul>
+						</div>
+					</div>
+				</footer>
+
+			</div><!-- end .content-container -->
+
+
+
+		</div><!-- end .half -->
+	</div><!-- end .split-container -->
+
+
+
+
+
+	<!-- jquery js -->
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+	<!-- bootstrap js -->
+	<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+	<!-- propeller js -->
+	<script type="text/javascript" src="js/propeller.min.js"></script>
+
+	<!-- javascripts js -->
+	<script type="text/javascript" src="https://npmcdn.com/particlesjs@2.0.2/dist/particles.min.js"></script>
+
 	<script type="text/javascript" src="js/code.js"></script>
 
 </body>

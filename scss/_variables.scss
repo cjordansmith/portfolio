@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,600,800');
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans:300,400,700');
+@import url('https://fonts.googleapis.com/css?family=Fira+Mono:700');
+@import url('https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700');
+
+/* font-family: 'Montserrat', sans-serif; */ /* navigation */
+/* font-family: 'Fira Sans', sans-serif; *//* headers */
+/* font-family: 'Quicksand', sans-serif; *//* body */
+
+$font-stack:    Quicksand, sans-serif;
+
+
+/* ==========  colors  ========== */
+
+// Create grayscale
+$black:											#3e3e40;
+$gray-dark:                 #292b2c !default;
+$gray:                      #464a4c !default;
+$gray-light:                #636c72 !default;
+$gray-lighter:              #eceeef !default;
+$gray-lightest:             #f7f7f9 !default;
+$white:											#ffffff;
+
+// cJordanSmith colors
+$blue: #4285F4;
+$dark-blue: #0047B8;
+$navy: #203046;
+$dark-navy: #1a2940;
+$green: #2CCC9D;
+
+
+/* RGB */
+$color1: rgba(220, 220, 221, 1);
+$color2: rgba(197, 195, 198, 1);
+$color3: rgba(70, 73, 76, 1);
+$color4: rgba(76, 92, 104, 1);
+$color5: rgba(25, 133, 161, 1);
+$space: #444349;
+
+// cJordanSmith buttons
+.btn-blue {
+	background: $blue;
+}
+.btn-navy {
+	background: $navy;
+}
+.btn-green {
+	background: $green;
+}
+
+/*
+// Reassign color vars to semantic color scheme
+$primary-color: 						$white;
+$brand-primary:             $blue !default;
+$brand-success:             $green !default;
+$brand-info:                $teal !default;
+$brand-warning:             $orange !default;
+$brand-danger:              $red !default;
+$brand-inverse:             $gray-dark !default;
+*/
+
+/*
+:root {
+  --lblue: #9ED1F6;
+  --lblue2: #CFEAFD;
+	--blue:  #6EB9EE;
+  --mblue: #48A5E7;
+  --mdblue: #2490DD;
+	--dblue: #097CCD;
+  --dnavy: #044776;
+	--green: #29FF9F;
+  --white:  #f1f1f1;
+  --black: #3e3e40;
+  --navy: #333c4e;
+  --gray: #A7A9AC;
+  --lime: #29FF9F;
+  --lime2: #48e8e4;
+
+  --bg-lgray:  #e9eaea;
+  --bg-dgray:  #d4d5d6;
+}*/
+
+/* ==========  text  ========== */
+.text-white {
+	color: $white;
+}
+.text-green {
+	color: $green;
+}
+
+
+
+
+
+
+
+.color-1 { color: #9ED1F6 } /* cover bar is this color */
+.color-2 { color: #6EB9EE }
+.color-0 { color: #48A5E7 }	/* Main Primary color */
+.color-3 { color: #2490DD }
+.color-4 { color: #097CCD } /* brackets are this color */
+
+.color-green { color: var(--green); }
+.color-white { color: var(--white); }
+
+
+.text-black { color: var(--black); }
+.text-gray-1 { color: var(--black); opacity: 0.54;}
+.text-gray { color: var(--gray); }
+
+.bg-white { background-color: var(--white); }
+.bg-gray { background-color: var(--bg-lgray); }
+.bg-darkgray { background-color: var(--bg-dgray); }
+.bg-color-1 {
+  background-color: var(--lblue);
+  color: var(--black);
+}
+.bg-white{ background: var(--white); }
+.bg-color-4 {
+  background-color: var(--dblue);
+}
+
+.btn-color-4 {
+  background-color: var(--dblue);
+}
+
+$height: 100vh;

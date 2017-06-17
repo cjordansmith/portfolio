@@ -1,0 +1,39 @@
+/* ==========  footer styles  ========== */
+.main-footer {
+	background: $color4;
+	background-repeat: repeat;
+	background-position: center center;
+}
+.footer-info {
+  font-size: 10px;
+  text-transform: uppercase;
+  padding: 18px 2%;
+  text-align: center;
+	ul {
+		margin: 0;
+		li {
+		 display: inline-block;
+		 margin-left: 3%;
+		 margin-right: 3%;
+		 color: $gray-lighter;
+		 font-weight: 400;
+		 letter-spacing: 0.7px;
+		 a {
+			 line-height: 1;
+		   color: $gray-lighter;
+		   text-decoration: underline;
+		 }
+		}
+	}
+}
+
+p.location {
+  margin-bottom: 40px;
+	color: $gray-lighter;
+}
+.social-icons a {
+  font-size: 30px;
+  display: inline-block;
+  margin: 12px 22px;
+  color: $gray-lighter;
+}

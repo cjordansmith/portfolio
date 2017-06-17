@@ -1,0 +1,185 @@
+/*  ./css/styles.css  */
+
+/* ==========  imports  ========== */
+@import "_variables";
+@import "_navbar";
+@import "_split-pane";
+@import "_angled-edges";
+@import "_sections";
+@import "_contact";
+@import "_footer";
+
+/* ==========  global styles  ========== */
+html {
+	font-size: 16px;
+}
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+body {
+
+}
+
+body * {
+	font-family: 'Poppins', sans-serif;
+}
+
+header {}
+section {
+  padding: 50px 2%;
+}
+
+.split-container {
+	height: 100%;
+  width: 100%;
+	position: absolute;
+  margin: 0;
+	display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.half {
+  width: 100%;
+  -ms-flex-preferred-size: 57.14286vh;
+      flex-basis: 57.14286vh;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+	position:sticky;
+	font: 600 32px Poppins, sans-serif;
+	color: #f6e8ea;
+	background: #444349;
+}
+.half + .half {
+  background: $color5;
+	overflow-x: hidden;
+}
+.half-flex {
+
+}
+.particles {
+	position: absolute;
+	display: block;
+	top: 0;
+	left: 0;
+	z-index: 0;
+	z-index: -1;
+}
+.cover-content {
+	height: 100%;
+	padding: 2% 6%;
+	max-width: 650px;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	align-content: space-between;
+	justify-content: space-between;
+	a {
+		color: $white;
+	}
+	.cover-text {
+		margin-top: -6%;
+		h1 {
+			line-height: 1;
+			font-size: 7.2vw;
+			font-weight: 700;
+			margin-bottom: 4%;
+			letter-spacing: 1px;
+		}
+		h2 {
+			font-size: 1.8vw;
+			font-weight: 300;
+			letter-spacing: 1.2px;
+		}
+	}
+
+	h3 {
+		font-size: 20px;
+	}
+	.cover-social {
+		margin: 0 20%;
+		text-align: center;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: nowrap;
+		justify-content: space-between;
+		a {
+			i {
+				font-size: 1.6rem;
+			}
+		}
+	}
+}
+
+
+.content-container {
+	padding: 0;
+}
+.section-container {
+	max-width: 650px;
+	margin: 0 auto;
+}
+
+h2 {
+  font-size: 32px;
+  font-weight: 300;
+  margin-top: 10px;
+}
+h3 {
+  font-size: 18px;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+
+p {
+	font-size: 16px;
+	font-weight: 300;
+	line-height: 1.6;
+}
+
+h1.cover-text {
+
+}
+
+/* ==========  buttons  ========== */
+.btn-cover {
+	background: $color5;
+	margin-top: 4%;
+	border: 2px solid $color5;
+	text-transform: lowercase;
+	letter-spacing: 1px;
+	&:hover {
+		background: transparent;
+		color: $white;
+		border: 2px solid $color5;
+	}
+}
+.btn-submit {
+	background: $color3;
+	border: 2px solid $color3;
+	&:hover {
+		background: transparent;
+		color: $white;
+		border: 2px solid $color3;
+	}
+}
+
+.i-transition {
+  -webkit-transition: all 1200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+  -moz-transition: all 1200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+  -ms-transition: all 1200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+  -o-transition: all 1200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+  transition: all 1200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+}
+.i-transition:hover {
+	color: $color5;
+	font-size:40px;
+}
+
+
+/* ==========  apps page styles  ========== */

@@ -1,0 +1,47 @@
+/* ==========  home-contact styles  ========== */
+
+.pmd-textfield-floating-label label {
+  color: $white;
+  font-weight: 300;
+	font-size: 14px;
+}
+.pmd-textfield-floating-label.pmd-textfield-floating-label-completed label {
+  color: $color2;
+  opacity: 0.65;
+  font-weight: 400;
+}
+.pmd-textfield-focused {
+	background: $color3;
+	height: 1px;
+}
+
+.contact-btn {
+  margin-top: 20px;
+}
+.contact-info {
+  text-align: center;
+	margin-top: 40px;
+	.contact-text {
+		display: inline-grid;
+		margin-left: 4%;
+		margin-right: 4%;
+		h3 {
+			font-size: 16px;
+		  font-weight: 400;
+		  letter-spacing: normal;
+			letter-spacing: 0.7px;
+		}
+		p {
+			font-size: 13px;
+			font-weight: 300;
+			letter-spacing: 0.7px;
+		}
+	}
+
+}
+
+.pmd-textfield .form-control {
+  color: $white;
+  font-weight: 300;
+	font-size: 14px;
+}
