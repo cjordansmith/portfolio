@@ -2,7 +2,7 @@
 .header {
   font-family: 'Montserrat', sans-serif;
 	z-index: 9999;
-	background: $navy;
+	background: $blue;
 	border-bottom: 2px solid $blue;
 	.header-nav {
     width: 100%;
@@ -35,7 +35,7 @@
     color: $white;
   }
 	.nav-ul > li a:hover {
-    color: $green;
+    color: $teal;
   }
   .nav-ul li.nav-li {
     display: inline-block;
