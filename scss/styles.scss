@@ -150,10 +150,6 @@ p {
 	letter-spacing: 1px;
 }
 
-h1.cover-text {
-
-}
-
 /* ==========  buttons  ========== */
 
 
@@ -172,3 +168,18 @@ h1.cover-text {
 
 
 /* ==========  apps page styles  ========== */
+@media (max-width: 768px) {
+	.cover-content {
+		height: 100vh;
+		.cover-text {
+			h1 {
+				font-size: 14vw;
+			}
+			h2 {
+				font-size: 4vw;
+				margin-top: 8%;
+				margin-bottom: 8%;
+			}
+		}
+	}
+}
