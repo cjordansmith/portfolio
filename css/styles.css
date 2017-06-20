@@ -521,3 +521,12 @@ p {
   font-size: 40px; }
 
 /* ==========  apps page styles  ========== */
+@media (max-width: 768px) {
+  .cover-content {
+    height: 100vh; }
+    .cover-content .cover-text h1 {
+      font-size: 14vw; }
+    .cover-content .cover-text h2 {
+      font-size: 4vw;
+      margin-top: 8%;
+      margin-bottom: 8%; } }
