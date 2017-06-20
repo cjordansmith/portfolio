@@ -7,44 +7,45 @@
 /* font-family: 'Fira Sans', sans-serif; *//* headers */
 /* font-family: 'Quicksand', sans-serif; *//* body */
 
-$font-stack:    Quicksand, sans-serif;
+$height: 100vh;
+
+/* ==========  grayscale colors  ========== */
+$black:											rgba(49,47,48,1);				// #312f30
+$gray-darker:								rgba(41,43,44,1);				// #292b2c
+$gray-dark:									rgba(99,108,114,1); 		// #636c72
+$gray:											rgba(188,189,192,1);		// #bcbdc0
+$gray-light:								rgba(236,238,239,1);		// #eceeef
+$gray-lighter:							rgba(247,247,249,1);		// #f7f7f9
+$white:											rgba(255,255,255,1);		// #ffffff
+
+/* ==========  cjordansmith colors  ========== */
+$teal:											rgba(18,167,157,1);			// #12a79d
+$yellow:										rgba(251,176,63,1);			// #fbb03f
+$orange:										rgba(247,147,29,1);			// #f7931d
+$blue:											rgba(59,152,211,1);			// #3b98d3
+$space: 										rgba(68,67,73,1);				// #444349
+
+@mixin bg-gradient() {
+	background: #12a79d; /* Old Browsers */
+	background: -webkit-linear-gradient(right,#12a79d,#078279); /*Safari 5.1-6*/
+	background: -o-linear-gradient(right,#12a79d,#078279); /*Opera 11.1-12*/
+	background: -moz-linear-gradient(right,#12a79d,#078279); /*Fx 3.6-15*/
+	background: linear-gradient(to left, #12a79d, #078279); /*Standard*/
+}
 
 
-/* ==========  colors  ========== */
-$space: #444349;
+/* ==========  buttons  ========== */
+button {
+	margin-top: 4%;
+}
 
-// Create grayscale
-// $black:											#3e3e40;
-$gray-dark:                 #292b2c !default;
-$gray-light:                #636c72 !default;
-$gray-lighter:              #eceeef !default;
-$gray-lightest:             #f7f7f9 !default;
-// $white:											#ffffff;
-
-// cJordanSmith colors
-$black:											rgba(49,47,48,1);
-$teal:											rgba(18,167,157,1);
-$yellow:										rgba(251,176,63,1);
-$orange:										rgba(247,147,29,1);
-$blue:											rgba(59,152,211,1);
-$gray:											rgba(188,189,192,1);
-$white:											rgba(255,255,255,1);
-
-// $blue: #4285F4;
-// $dark-blue: #0047B8;
-// $navy: #203046;
-// $dark-navy: #1a2940;
-// $green: #2CCC9D;
-
-/* RGB */
-// $color1: rgba(220, 220, 221, 1);
-// $color2: rgba(197, 195, 198, 1);
-// $color3: rgba(70, 73, 76, 1);
-// $color4: rgba(76, 92, 104, 1);
-// $color5: rgba(25, 133, 161, 1);
-
-
-// cJordanSmith buttons
+.btn {
+	padding-left: 22px;
+	padding-right: 22px;
+	font-size: 16px;
+	letter-spacing: 1px;
+	font-weight: 500;
+}
 
 .btn-js {
 	text-transform: lowercase;
@@ -54,6 +55,7 @@ $white:											rgba(255,255,255,1);
 		background: $blue;
 		border: 2px solid $blue;
 		box-shadow: 0px 5px 0px 0px #1675af;
+
 		&:hover {
 			background: transparent;
 			color: $white;
@@ -66,6 +68,7 @@ $white:											rgba(255,255,255,1);
 		background: $teal;
 		border: 2px solid $teal;
 		box-shadow: 0px 5px 0px 0px #078279;
+
 		&:hover {
 			background: transparent;
 			color: $white;
@@ -78,6 +81,7 @@ $white:											rgba(255,255,255,1);
 		background: $orange;
 		border: 2px solid $orange;
 		box-shadow: 0px 5px 0px 0px #c16d0d;
+
 		&:hover {
 			background: transparent;
 			color: $white;
@@ -86,10 +90,25 @@ $white:											rgba(255,255,255,1);
 		}
 	}
 
+	&.btn-four {
+		background: $yellow;
+		border: 2px solid $yellow;
+		box-shadow: 0px 5px 0px 0px #e58f0d;
+
+		&:hover {
+			background: transparent;
+			color: $white;
+			border: 2px solid $yellow;
+			box-shadow: 0px 5px 0px 0px $yellow;
+		}
+	}
+
+
 	&.btn-gray {
 		background: $gray;
 		border: 2px solid $gray;
 		box-shadow: 0px 5px 0px 0px #83858c;
+
 		&:hover {
 			background: transparent;
 			color: $white;
@@ -99,22 +118,7 @@ $white:											rgba(255,255,255,1);
 	}
 }
 
-
-
-/*
-// Reassign color vars to semantic color scheme
-$primary-color: 						$white;
-$brand-primary:             $blue !default;
-$brand-success:             $green !default;
-$brand-info:                $teal !default;
-$brand-warning:             $orange !default;
-$brand-danger:              $red !default;
-$brand-inverse:             $gray-dark !default;
-*/
-
-
-
-/* ==========  text  ========== */
+/* ==========  text classes ========== */
 .text-white {
 	color: $white;
 }
@@ -129,44 +133,58 @@ $brand-inverse:             $gray-dark !default;
 	color: $orange;
 }
 
-$height: 100vh;
 
-/*
-:root {
-  --lblue: #9ED1F6;
-  --lblue2: #CFEAFD;
-	--blue:  #6EB9EE;
-  --mblue: #48A5E7;
-  --mdblue: #2490DD;
-	--dblue: #097CCD;
-  --dnavy: #044776;
-	--green: #29FF9F;
-  --white:  #f1f1f1;
-  --black: #3e3e40;
-  --navy: #333c4e;
-  --gray: #A7A9AC;
-  --lime: #29FF9F;
-  --lime2: #48e8e4;
+/* ==========  old colors  ========== */
 
-  --bg-lgray:  #e9eaea;
-  --bg-dgray:  #d4d5d6;
-}*/
+// $blue: #4285F4;
+// $dark-blue: #0047B8;
+// $navy: #203046;
+// $dark-navy: #1a2940;
+// $green: #2CCC9D;
+
+/* RGB */
+// $color1: rgba(220, 220, 221, 1);
+// $color2: rgba(197, 195, 198, 1);
+// $color3: rgba(70, 73, 76, 1);
+// $color4: rgba(76, 92, 104, 1);
+// $color5: rgba(25, 133, 161, 1);
+
+// $primary-color: 						$white;
+// $brand-primary:             $blue !default;
+// $brand-success:             $green !default;
+// $brand-info:                $teal !default;
+// $brand-warning:             $orange !default;
+// $brand-danger:              $red !default;
+// $brand-inverse:             $gray-dark !default;
 //
+// :root {
+//   --lblue: #9ED1F6;
+//   --lblue2: #CFEAFD;
+// 	--blue:  #6EB9EE;
+//   --mblue: #48A5E7;
+//   --mdblue: #2490DD;
+// 	--dblue: #097CCD;
+//   --dnavy: #044776;
+// 	--green: #29FF9F;
+//   --white:  #f1f1f1;
+//   --black: #3e3e40;
+//   --navy: #333c4e;
+//   --gray: #A7A9AC;
+//   --lime: #29FF9F;
+//   --lime2: #48e8e4;
+//   --bg-lgray:  #e9eaea;
+//   --bg-dgray:  #d4d5d6;
+// }
 //
 // .color-1 { color: #9ED1F6 } /* cover bar is this color */
 // .color-2 { color: #6EB9EE }
 // .color-0 { color: #48A5E7 }	/* Main Primary color */
 // .color-3 { color: #2490DD }
 // .color-4 { color: #097CCD } /* brackets are this color */
-//
 // .color-green { color: var(--green); }
 // .color-white { color: var(--white); }
-//
-//
-//
 // .text-gray-1 { color: var(--black); opacity: 0.54;}
 // .text-gray { color: var(--gray); }
-//
 // .bg-white { background-color: var(--white); }
 // .bg-gray { background-color: var(--bg-lgray); }
 // .bg-darkgray { background-color: var(--bg-dgray); }
@@ -178,7 +196,6 @@ $height: 100vh;
 // .bg-color-4 {
 //   background-color: var(--dblue);
 // }
-//
 // .btn-color-4 {
 //   background-color: var(--dblue);
 // }
