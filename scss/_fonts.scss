@@ -1,0 +1,78 @@
+//------------------------------------//
+// THEME SETTING VARIABLES            //
+//------------------------------------//
+
+// Set min/max viewport widths for calculation
+$font-min-width: 480; // min width needed for calculation
+$font-max-width: 1200; // max width to for calculation
+
+// Set min/max font sizes for each element
+$min-font-h1: 42;
+$max-font-h1: 112;
+$min-font-h2: 20;
+$max-font-h2: 28;
+$min-font-h3: 16;
+$max-font-h3: 18;
+$min-font-body: 12;
+$max-font-body: 16;
+$min-font-small-text: 11;
+$max-font-small-text: 13;
+
+//------------------------------------//
+// FONT SIZE MAP                      //
+//------------------------------------//
+$fonts: (
+  sizes: (
+    h1: (
+      min: $min-font-h1,
+      max: $max-font-h1
+    ),
+    h2: (
+      min: $min-font-h2,
+      max: $max-font-h2
+    ),
+    h3: (
+      min: $min-font-h3,
+      max: $max-font-h3
+    ),
+    body: (
+      min: $min-font-body,
+      max: $max-font-body
+    ),
+    '.small-text': (
+      min: $min-font-small-text,
+      max: $max-font-small-text
+    )
+  )
+);
+
+// FETCH NESTED KEY VALUES
+@function map-fetch($map, $keys) {
+  $key: nth($keys, 1);
+  $length: length($keys);
+  $value: map-get($map, $key);
+  @if ($length > 1) {
+    $rest: ();
+    @for $i from 2 through $length {
+      $rest: append($rest, nth($keys, $i))
+    }
+    @return map-fetch($value, $rest)
+  } @else {
+    @return $value;
+  }
+}
+
+// ITERATE THROUGH SIZES AND CREATE CLASSES ACCORDINGLY
+@each $size in map-keys(map-get($fonts, sizes)) {
+  #{$size} { font-size: #{map-fetch($fonts, sizes $size min)}px; }
+  @media (min-width: #{$font-min-width}px) and (max-width: #{$font-max-width}px){
+    #{$size} {
+      font-size: calc( #{map-fetch($fonts, sizes $size min)}px + (#{map-fetch($fonts, sizes $size max )} - #{map-fetch($fonts, sizes $size min)}) * ( (100vw - #{$font-min-width}px) / ( #{$font-max-width} - #{$font-min-width}) ));
+    }
+  }
+  @media (min-width: #{$font-max-width}px){
+     #{$size} {
+       font-size: #{map-fetch($fonts, sizes $size max)}px;
+     }
+  }
+}

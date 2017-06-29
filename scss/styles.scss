@@ -1,6 +1,8 @@
 /*  ./css/styles.css  */
 
 /* ==========  imports  ========== */
+@import "_fonts";
+@import "_type";
 @import "_variables";
 @import "_angled-edges";
 
@@ -13,71 +15,12 @@ html, body {
   height: 100%;
   width: 100%;
   margin: 0;
+	color: $dark-gray;
+	background: $white;
 }
 
-body * {
-	font-family: 'Poppins', sans-serif;
-}
-
-header {}
 section {
   padding: 50px 2%;
-}
-
-h1 {
-	line-height: 1.1;
-	font-size: 112px;
-	font-weight: 700;
-	margin-bottom: 6%;
-	letter-spacing: 1px;
-}
-
-h2 {
-  font-size: 32px;
-  margin-top: 10px;
-	color: $space;
-	letter-spacing: 1.1px;
-	font-weight: 500;
-	margin-bottom: 0;
-}
-
-h3 {
-  font-weight: 400;
-  letter-spacing: 1px;
-	font-size: 22px;
-	line-height: 1;
-	display: inline;
-	color: $blue;
-}
-
-h4 {
-	font-size: 24px;
-	font-weight: 300;
-	letter-spacing: 1.6px;
-}
-
-p {
-	font-size: 16px;
-	font-weight: 300;
-	line-height: 2;
-	letter-spacing: 1px;
-	color: $space;
-	padding: 10px 0 0;
-}
-
-i {
-}
-
-span.yellow {
-	color: $yellow;
-}
-
-span.teal {
-	color: $teal;
-}
-
-span.space {
-	color: $space;
 }
 
 span.white {
@@ -109,13 +52,11 @@ canvas {
   //     -ms-flex-positive: 1;
   //         flex-grow: 1;
 	// position:sticky;
-	font: 600 32px Poppins, sans-serif;
-	color: #f6e8ea;
-	background: #444349;
+	background: $dark-gray;
 }
 
 .half + .half {
-  background: $gray-light;
+  background: $light-gray;
 	overflow-x: hidden;
 }
 
@@ -135,6 +76,7 @@ canvas {
 	right: 0;
 	height: 100vh;
 	width: 50%;
+
 }
 
 
@@ -157,11 +99,11 @@ canvas {
 	display: grid;
 	grid-template-columns: 1fr;
 	grid-template-rows: [cover-top] 52px [cover-mid] auto [cover-bottom] 52px;
-	// display: flex;
-	// flex-direction: column;
-	// flex-wrap: nowrap;
-	// align-content: space-between;
-	// justify-content: space-between;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	align-content: space-between;
+	justify-content: space-between;
 
 	.cover-name {
 		grid-column-start: 1;
@@ -170,63 +112,69 @@ canvas {
 		padding: 0;
 		margin: 0;
 		z-index: 999999;
-		a {
 
+		a {
 			display: block;
 			line-height: 22px;
 			color: $white;
 			padding: 0;
 			margin: 0;
 			height: 22px;
-			h3 {
-				color: $white;
-				display: block;
-				height: 22px;
-				line-height: 22px;
-				padding: 0;
-				margin: 0;
-			}
 		}
 	}
 
 	.cover-text {
-		//margin-top: -6%;
+		margin-top: -6%;
 		grid-column-start: 1;
 		grid-row-start: cover-mid;
-		align-self: center;
+		align-self: left;
+		color: $white;
 	}
+
 	.cover-social {
-		margin: 0;
+		margin: 0 0 2%;
 		text-align: center;
 		grid-column-start: 1;
 		grid-row-start: cover-bottom;
 		align-self: end;
-		// display: flex;
-		// flex-direction: row;
-		// flex-wrap: nowrap;
-		// justify-content: space-between;
+		z-index: 999999;
+		width: 100%;
 
-		a {
-			height: 52px;
-			margin: 0;
+		ul {
+			width: 80%;
+			margin: 0 auto;
 			padding: 0;
-			i {
+			text-align: center;
+
+			li {
+				width: 20%;
+				margin: 0 auto;
+				align-self: center;
 				display: inline-block;
-				font-size: 32px;
-				margin: 0 4%;
-				padding: 0;
-				color: $white;
-				&:hover {
-					color: $yellow;
-					cursor: pointer;
+
+				a {
+					height: 52px;
+					margin: 0 6%;
+					padding: 0;
+
+					i {
+						font-size: 24px;
+						padding: 0;
+						color: $white;
+
+						&:hover {
+							color: $accent;
+							cursor: pointer;
+						}
+
+					}
+
 				}
 			}
 		}
+
 	}
 }
-
-
-
 
 /* ==========  sections  ========== */
 .content-container {
@@ -238,6 +186,7 @@ canvas {
 .section-container {
 	max-width: 650px;
 	margin: 0 auto;
+
 }
 
 .section {
@@ -245,7 +194,11 @@ canvas {
 
 	.section-content {
 		padding-top: 0px;
-
+		.about-btns {
+			text-align: center;
+			padding-top: 20px;
+			padding-bottom: 0;
+		}
 		.project {
 			padding: 24px 0;
 			header {
@@ -253,18 +206,20 @@ canvas {
 				position: relative;
 
 				a {
+					color: $base;
 					h3 {
 						&:hover {
-							color: $yellow;
+							color: $accent;
 						}
 					}
 					i {
-						color: $space;
-						vertical-align: middle;
+						font-size: 24px;
+						color: $dark-gray;
+						&:hover {
+							color: $accent;
+						}
 					}
-					i:hover {
-						color: $yellow;
-					}
+
 				}
 			}
 		}
@@ -274,8 +229,9 @@ canvas {
 .about {
 	-webkit-clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
 	clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
-	background: $blue;
-	padding-bottom: 115px;
+
+	padding-bottom: 70px;
+
 	h2 {
 		color: $white;
 	}
@@ -285,16 +241,17 @@ canvas {
 }
 
 .websites {
-	-webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 97%);
-	clip-path: polygon(0 0, 100% 0, 100% 100%, 0 97%);
+	-webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 50px));
+	clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 50px));
 	background: $white;
 }
 
 .apps {
-	background: $gray-light;
-	-webkit-clip-path: polygon(0 0, 100% 5%, 100% 100%, 0 100%);
-	clip-path: polygon(0 0, 100% 5%, 100% 100%, 0 100%);
+	background: $light-gray;
+	-webkit-clip-path: polygon(0 0, 100% 50px, 100% 100%, 0 100%);
+	clip-path: polygon(0 0, 100% 50px, 100% 100%, 0 100%);
 	margin-bottom: -20px;
+	margin-top: -40px;
 }
 
 /* ==========  contact form  ========== */
@@ -347,7 +304,7 @@ canvas {
 }
 
 .pmd-textfield-focused {
-	background: $yellow;
+	background: $accent;
 	height: 2px;
 }
 
@@ -368,7 +325,7 @@ canvas {
 			font-weight: 300;
 			line-height: 2;
 			letter-spacing: 0.7px;
-			color: $gray-lighter;
+			color: $light-gray;
 			padding: 0;
 
 			span {
@@ -416,7 +373,7 @@ a > i.icon-right {
   transition: all 1200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
 }
 .i-transition:hover {
-	color: $yellow;
+	color: $accent;
 	font-size:40px;
 }
 
@@ -425,10 +382,11 @@ a > i.icon-right {
 .main-footer {
 	width: 100%;
 	padding: 0;
-	background: $blue;
+	background: $base;
 	-webkit-clip-path: polygon(50% 0, 100% 18%, 100% 100%, 0 100%, 0 18%);
 	clip-path: polygon(50% 0, 100% 18%, 100% 100%, 0 100%, 0 18%);
 }
+
 .footer-info {
 	width: 100%;
 	margin: 0;
@@ -446,7 +404,7 @@ a > i.icon-right {
 		justify-content: space-around;
 		li {
 		 display: block;
-		 color: $gray-lighter;
+		 color: $light-gray;
 		 font-weight: 400;
 		 letter-spacing: 0.7px;
 		 &:hover {
@@ -454,7 +412,7 @@ a > i.icon-right {
 		 }
 		 a {
 			 line-height: 1;
-		   color: $gray-lighter;
+		   color: $light-gray;
 
 			 &:hover {
 				 text-decoration: underline;
@@ -467,17 +425,39 @@ a > i.icon-right {
 
 /* ==========  media queries  ========== */
 @media (max-width: 768px) {
+	.half {
+		width: 100%;
+	}
+
+	.half + .half {
+		overflow-x: show;
+	}
+
+	.left,
+	.right {
+		position: relative;
+		float: none;
+		height: auto;
+	}
+
+	.particles {
+		height: 100vh;
+		z-index: auto;
+	}
+
 	.cover-content {
 		height: 100vh;
+
 		.cover-text {
 			h1 {
-				font-size: 42px;
+				font-size: 14vw;
 			}
-			h2 {
+			h4 {
 				font-size: 4vw;
 				margin-top: 8%;
 				margin-bottom: 8%;
 			}
 		}
 	}
+
 }

@@ -5,13 +5,8 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
 
-
 	<title>Jordan Smith | Portfolio</title>
 	<link rel="shortcut icon" type="image/x-icon" href="./assets/images/hooly.ico">
-
-	<!-- type fonts -->
-	<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,700" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Space+Mono:400,700" rel="stylesheet">
 
 	<!-- icon fonts -->
 	<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/4f6a4b08efdad6bb29f9cc801f5c07e263b39907/devicon.min.css">
@@ -19,7 +14,7 @@
 
 	<!-- stylesheets -->
 	<link href="./css/bootstrap.min.css" rel="stylesheet">
-	<link href="./css/propeller.min.css" rel="stylesheet">
+	<!-- <link href="./css/propeller.min.css" rel="stylesheet">-->
 	<link href="./css/styles.css" rel="stylesheet">
 
 	<!-- javascripts -->
@@ -36,21 +31,23 @@
 				<div class="particles" id="particles-js"></div>
 
 				<div class="cover-name">
-					<a href="/"><h3>cjordansmith</h3></a>
+					<a href="/"><h4>cjordansmith</h4></a>
 				</div>
 
 
 				<div class="cover-text" id="cover-text">
-					<h1>hi<span class="yellow">,</span><br />i<span class="yellow">'</span>m jordan</h1>
-					<h4>developer <span class="yellow">-</span> designer <span class="yellow">-</span> builder</h4>
-					<button type="button" class="btn btn-lg pmd-btn-outline pmd-ripple-effect btn-js btn-cover btn-one" onclick="showContact()">get in touch</button>
+					<h1>hi,<br />i'm<br />jordan</h1>
+					<h4>developer - designer - builder</h4>
+					<button type="button" class="btn btn-one" onclick="showContact()">get in touch</button>
 				</div>
 
 				<div class="cover-social">
-					<a href="https://github.com/cjordansmith"><i class="fa fa-github-alt i-transition" aria-hidden="true" target="_blank"></i></a>
-					<a href="https://www.linkedin.com/in/c-jordan-smith-5a026353" target="_blank"><i class="fa fa-linkedin i-transition" aria-hidden="true"></i></a>
-					<a href="mailto:someone@example.com?Subject=Hello%20again" target="_top"><i class="fa fa-envelope-o i-transition" aria-hidden="true"></i></a>
-					<a href="./assets/resume/jordansmith-resume-20170605.pdf" target="_blank"><i class="fa fa-file-pdf-o i-transition" aria-hidden="true"></i></a>
+					<ul>
+						<li><a href="https://github.com/cjordansmith"><i class="fa fa-github-alt i-transition" aria-hidden="true" target="_blank"></i></a></li>
+						<li><a href="https://www.linkedin.com/in/c-jordan-smith-5a026353" target="_blank"><i class="fa fa-linkedin i-transition" aria-hidden="true"></i></a></li>
+						<li><a href="mailto:someone@example.com?Subject=Hello%20again" target="_top"><i class="fa fa-envelope-o i-transition" aria-hidden="true"></i></a></li>
+						<li><a href="./assets/resume/jordansmith-resume-20170605.pdf" target="_blank"><i class="fa fa-file-pdf-o i-transition" aria-hidden="true"></i></a></li>
+					</ul>
 				</div>
 
 				<div class="contact-frame" id="contact-frame">
@@ -85,8 +82,8 @@
 										<span class="pmd-textfield-focused"></span>
 									</div>
 									<div class="contact-buttons">
-										<button type="button" class="btn btn-md pmd-btn-outline pmd-ripple-effect btn-js btn-cover btn-gray" onclick="showContact()">back</button>
-										<button type="submit" class="btn btn-md pmd-btn-outline pmd-ripple-effect btn-js btn-cover btn-one">send</button>
+										<button type="button" class="btn btn-cover btn-two" onclick="showContact()">back</button>
+										<button type="submit" class="btn btn-cover btn-one">send</button>
 									</div>
 								</form>
 							</div>
@@ -111,7 +108,7 @@
 
 
 		<div class="half right">
-			<div class="content-container bg-white">
+			<div class="content-container bg-base">
 
 				<div id="about" class="container-fluid section about">
 					<div class="section-container">
@@ -120,7 +117,11 @@
 						</header>
 						<div class="section-content">
 							<p>I am a web developer located in Kansas City, Missouri who enjoys building anything I can get my hands on. I can create anything from static personal sites to small-scale web applications. I primarily code in HTML, CSS, and JavaScript, with a few others thrown in here and there. If you are a business seeking a web presence or an employer looking to hire, you can get in touch with me below.</p>
-							<a href="./assets/resume/jordansmith-resume-20170605.pdf"><button type="button" class="btn btn-md pmd-ripple-effect btn-js btn-four">view resume</button></a>
+							<div class="about-btns">
+								<a href="./assets/resume/jordansmith-resume-20170605.pdf"><button class="btn btn-two">view resume</button></a>
+								<a href="./assets/resume/jordansmith-resume-20170605.pdf"><button class="btn btn-two">contact me</button></a>
+							</div>
+
 						</div>
 					</div>
 				</div><!-- end .about -->

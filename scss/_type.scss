@@ -1,0 +1,53 @@
+//@import url('https://fonts.googleapis.com/css?family=PT+Sans:400,700');
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,600');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:500,900');
+//	font-family: 'Poppins', sans-serif;
+//	font-family: 'Titillium Web', sans-serif;
+
+body * {
+	font-family: 'Poppins', sans-serif;
+	font-weight: 400;
+}
+
+//	cover heading
+h1 {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 900;
+	line-height: 1;
+	letter-spacing: -1px;
+}
+
+//	section headings
+h2 {
+	font-family: 'Montserrat', sans-serif;
+  margin-top: 10px;
+	letter-spacing: 1.1px;
+	font-weight: 500;
+	margin-bottom: 2%;
+	text-transform: uppercase;
+}
+
+//	project titles
+h3 {
+	text-transform: lowercase;
+  font-weight: 300;
+  letter-spacing: 1px;
+	line-height: 1;
+	display: inline;
+}
+
+//	cover tagline
+h4 {
+	font-size: 20px;
+	font-weight: 300;
+	letter-spacing: 1.6px;
+	margin: 12% 0;
+}
+
+p {
+	//font-size: 14px;
+	font-weight: 300;
+	line-height: 2;
+	letter-spacing: 1px;
+	padding: 10px 0 0;
+}
