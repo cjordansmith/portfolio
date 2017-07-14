@@ -1,7 +1,6 @@
 /*  ./css/styles.css  */
 
 /* ==========  imports  ========== */
-@import "_fonts";
 @import "_type";
 @import "_variables";
 @import "_angled-edges";
@@ -195,21 +194,21 @@ canvas {
 	.section-content {
 		padding-top: 0px;
 		.about-btns {
-			text-align: center;
+			text-align: left;
 			padding-top: 20px;
 			padding-bottom: 0;
 		}
 		.project {
 			padding: 24px 0;
 			header {
-				padding-bottom: 0px;
+				padding-bottom: 8px;
 				position: relative;
 
 				a {
 					color: $base;
 					h3 {
 						&:hover {
-							color: $accent;
+							color: $base;
 						}
 					}
 					i {
@@ -221,6 +220,9 @@ canvas {
 					}
 
 				}
+			}
+			.project-content p.description {
+				font-weight: 600;
 			}
 		}
 	}

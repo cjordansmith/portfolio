@@ -3,11 +3,11 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins:300,400,600");
 @import url("https://fonts.googleapis.com/css?family=Montserrat:500,900");
 h1 {
-  font-size: 42px; }
+  font-size: 68px; }
 
 @media (min-width: 480px) and (max-width: 1200px) {
   h1 {
-    font-size: calc( 42px + 70 * ( (100vw - 480px) / 720 )); } }
+    font-size: calc( 68px + 44 * ( (100vw - 480px) / 720 )); } }
 
 @media (min-width: 1200px) {
   h1 {
@@ -29,11 +29,11 @@ h3 {
 
 @media (min-width: 480px) and (max-width: 1200px) {
   h3 {
-    font-size: calc( 16px + 2 * ( (100vw - 480px) / 720 )); } }
+    font-size: calc( 16px + 8 * ( (100vw - 480px) / 720 )); } }
 
 @media (min-width: 1200px) {
   h3 {
-    font-size: 18px; } }
+    font-size: 24px; } }
 
 body {
   font-size: 12px; }
@@ -80,7 +80,8 @@ h3 {
   font-weight: 300;
   letter-spacing: 1px;
   line-height: 1;
-  display: inline; }
+  display: inline;
+  margin-bottom: 20px; }
 
 h4 {
   font-size: 20px;
@@ -375,23 +376,25 @@ canvas {
   .section .section-content {
     padding-top: 0px; }
     .section .section-content .about-btns {
-      text-align: center;
+      text-align: left;
       padding-top: 20px;
       padding-bottom: 0; }
     .section .section-content .project {
       padding: 24px 0; }
       .section .section-content .project header {
-        padding-bottom: 0px;
+        padding-bottom: 8px;
         position: relative; }
         .section .section-content .project header a {
           color: #0085D4; }
           .section .section-content .project header a h3:hover {
-            color: #00BEF6; }
+            color: #0085D4; }
           .section .section-content .project header a i {
             font-size: 24px;
             color: #293643; }
             .section .section-content .project header a i:hover {
               color: #00BEF6; }
+      .section .section-content .project .project-content p.description {
+        font-weight: 600; }
 
 .about {
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
