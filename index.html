@@ -22,11 +22,12 @@
 
 </head>
 <body>
+	<!-- MAIN CONTAINER -->
 	<div class="split-container">
+
 		<div class="half left">
 
-
-
+			<!-- COVER CONTENT -->
 			<div class="cover-content">
 				<div class="particles" id="particles-js"></div>
 
@@ -34,13 +35,14 @@
 					<a href="/"><h4>cjordansmith</h4></a>
 				</div>
 
-
+				<!-- COVER MAIN TEXT -->
 				<div class="cover-text" id="cover-text">
 					<h1>hi,<br />i'm<br />jordan</h1>
 					<h4>developer - designer - builder</h4>
 					<button type="button" class="btn btn-one" onclick="showContact()">get in touch</button>
-				</div>
+				</div><!-- end .cover-text -->
 
+				<!-- SOCIAL MEDIA ICONS -->
 				<div class="cover-social">
 					<ul>
 						<li><a href="https://github.com/cjordansmith"><i class="fa fa-github-alt i-transition" aria-hidden="true" target="_blank"></i></a></li>
@@ -48,17 +50,18 @@
 						<li><a href="mailto:someone@example.com?Subject=Hello%20again" target="_top"><i class="fa fa-envelope-o i-transition" aria-hidden="true"></i></a></li>
 						<li><a href="./assets/resume/jordansmith-resume-20170605.pdf" target="_blank"><i class="fa fa-file-pdf-o i-transition" aria-hidden="true"></i></a></li>
 					</ul>
-				</div>
+				</div><!-- end .cover-social -->
 
+				<!-- CONTACT FORM -->
 				<div class="contact-frame" id="contact-frame">
 					<div class="content-container">
-
 						<div class="container-fluid section contact-flex">
 
 							<header>
 								<h2>contact</h2>
 							</header>
 
+							<!-- CONTACT FORM MAIN -->
 							<div class="section-content">
 								<form action="https://formspree.io/cjordansmith@gmail.com" method="POST">
 									<div class="form-group pmd-textfield pmd-textfield-floating-label">
@@ -87,6 +90,7 @@
 									</div>
 								</form>
 							</div>
+							<!-- CONTACT INFO -->
 							<div class="contact-info">
 								<div class="contact-text">
 									<p>
@@ -99,13 +103,14 @@
 										cjordansmith@gmail.com</p>
 								</div>
 							</div>
-						</div>
-					</div>
-				</div>
-			</div>
 
-		</div>
+						</div><!-- end .section -->
+					</div><!-- end .content-container -->
+				</div><!-- END CONTACT FORM -->
 
+			</div><!-- end .cover-content -->
+
+		</div><!-- end .half-left -->
 
 		<div class="half right">
 			<div class="content-container bg-base">
@@ -130,10 +135,12 @@
 				<!-- WEBSITES SECTION -->
 				<div id="websites" class="container-fluid section websites">
 					<div class="section-container">
+
 						<header>
 							<h2>websites</h2>
 						</header>
 
+						<!-- IZOOKY -->
 						<div class="section-content">
 							<div class="project">
 								<header>
@@ -152,8 +159,9 @@
 									</p>
 								</div>
 							</div>
-						</div>
+						</div><!-- end iZooky -->
 
+						<!-- WDDM -->
 						<div class="section-content">
 							<div class="project">
 								<header>
@@ -165,12 +173,29 @@
 										Homepage for the Web Development and Digital Media program at Johnson County Community College.
 									</p>
 									<p>
-										This was my final semester project at school were I was tasked with developing a student showcase page for the Web Development program at JCCC. I had ideas on how to incorporate a small Node.js page into the project, but ran into several road blocks along the way since the original site was developed with Wordpress. After days of trying to find work-arounds for adding Node.js, custom JavaScript, and my own styling into Wordpress without using plugins, I decided on a different route. With the "client's" permission, I spent the rest of the semester converting the Wordpress site into something I could use with Brunch, a static site generator/build tool.
+										This was my final semester project at school were I was tasked with developing a student showcase page for the Web Development program at JCCC. I had ideas on how to incorporate a small Node.js page into the project, but ran into several road blocks along the way since the original site was developed with Wordpress. After days of trying to find work-arounds for adding Node.js, custom JavaScript, and my own styling into Wordpress without using plugins, I decided on a different route. With the "client's" permission, I spent the rest of the semester converting the PHP Wordpress site into purely HTML, CSS, and JavaScript in order to build the site using a static site generator, as well as remove the bloat and extra functionality of Wordpress that the site was not taking advantage of. The site is now developed using Brunch as it's generator/builder and includes SASS, Clean CSS, and ImageOptimizer.
 									</p>
 								</div>
 							</div>
-						</div>
+						</div><!-- end WDDM -->
 
+						<!-- PORTFOLIO v1 -->
+						<div class="section-content">
+							<div class="project">
+								<header>
+									<a href="http://cjordansmith.me/portfolio-jccc/" target="_blank"><h3>Portfolio v1</h3></a>
+									<a href="https://github.com/cjordansmith/portfolio-jccc" target="_blank"><i class="fa fa-github icon-right"></i></a>
+								</header>
+								<div class="project-content">
+									<p>
+										This is the first design of my portfolio. It was created for a class at school so it includes some of the requirements of the project that I didn't feel were neccessary moving forward. The links to the projects may have changed, so to view my work or to contact me I recommend using my current site.
+									</p>
+								</div>
+							</div>
+						</div><!-- end PORTFOLIO v1 -->
+
+
+						<!-- CALVIN & HOBBES -->
 						<div class="section-content">
 							<div class="project">
 								<header>
@@ -179,12 +204,13 @@
 								</header>
 								<div class="project-content">
 									<p>
-										This is a design I made of CSS Zen Garden that uses the comic strip Calvin and Hobbes as the theme. I made this for a final in school using the unedited HTML file from the website and added my own CSS.
+										This is my design of CSS Zen Garden that I used the comic strip Calvin and Hobbes as inspiration. I made this for a final in school using the unedited HTML file from the website and added my own CSS.
 									</p>
 								</div>
 							</div>
-						</div>
+						</div><!-- end CALVIN & HOBBES -->
 
+						<!-- CJK -->
 						<div class="section-content">
 							<div class="project">
 								<header>
@@ -193,17 +219,19 @@
 								</header>
 								<div class="project-content">
 									<p>
-										A custom design of CJK Software Consultants, Inc. using jQuery Mobile. This was a project from my first Web Apps course in school. You can view CJK's <a href="http://www.cjk-consulting.com/" class="inline-link">current website</a> to compare with my redesign.
+										A custom design of CJK Software Consultants, Inc. using jQuery Mobile. This was my first experience using a JavaScript framework. Along with the website redesign, I also slightly altered the company logo and color scheme. You can view CJK's <a href="http://www.cjk-consulting.com/" class="inline-link">current website</a> to compare with my redesign.
 									</p>
 								</div>
 							</div>
-						</div>
+						</div><!-- end CJK -->
 
+						<!-- BLUES -->
+						<!--
 						<div class="section-content">
 							<div class="project">
 								<header>
-									<a href="https://wddm.web.csit.jccc.edu/wordpress/"><h3>Stl Blues - jQuery Mobile</h3></a>
-									<a href="https://wddm.web.csit.jccc.edu/wordpress/"><i class="fa fa-github icon-right"></i></a>
+									<a href="http://cjordansmith.me/blues-jquery-mobile/" target="_blank"><h3>Stl Blues - jQuery Mobile</h3></a>
+									<a href="https://github.com/cjordansmith/blues-jquery-mobile" target="_blank"><i class="fa fa-github icon-right"></i></a>
 								</header>
 								<div class="project-content">
 									<p>
@@ -211,22 +239,24 @@
 									</p>
 								</div>
 							</div>
-						</div>
+						</div>--><!-- end BLUES -->
 
+						<!-- HTML FINAL -->
 						<div class="section-content">
 							<div class="project">
 								<header>
-									<a href="https://wddm.web.csit.jccc.edu/wordpress/"><h3>HTML 1 Class Final</h3></a>
-									<a href="https://wddm.web.csit.jccc.edu/wordpress/"><i class="fa fa-github icon-right"></i></a>
+									<a href="http://cjordansmith.me/html1-final/final1.html"><h3>HTML 1 Class Final</h3></a>
+									<a href="https://github.com/cjordansmith/html1-final"><i class="fa fa-github icon-right"></i></a>
 								</header>
 								<div class="project-content">
 									<p>
-										Homepage for the Web Development and Digital Media program at Johnson County Community College. Homepage for the Web Development and Digital Media program at Johnson County Community College. Homepage for the Web Development and Digital Media program at Johnson County Community College.
+										My final project for my HTML &amp; CSS 1 class. I had to create a site that used the assigned topic as it's content, and my topic was SEO. This site uses only HTML, CSS, and JavaScript.
 									</p>
 								</div>
 							</div>
-						</div>
-					</div>
+						</div><!-- end HTML FINAL -->
+
+					</div><!-- end .section-container -->
 				</div><!-- end .websites -->
 
 				<!-- APPS SECTION -->
@@ -315,29 +345,22 @@
 
 			</div><!-- end .content-container -->
 
-
-
 		</div><!-- end .half -->
+
 	</div><!-- end .split-container -->
 
-
-
-
+	<!-- <a href="#" onClick="window.open('yourpage.htm','pagename','resizable,height=260,width=370'); return false;">New Page</a><noscript>You need Javascript to use the previous link or use <a href="yourpage.htm" target="_blank">New Page</a></noscript> -->
 
 	<!-- jquery js -->
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-
 	<!-- bootstrap js -->
 	<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-
 	<!-- propeller js -->
 	<script type="text/javascript" src="js/propeller.min.js"></script>
-
 	<!-- particles js -->
 	<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
   <script type="text/javascript" src="js/particles.js"></script>
 	<!--<script type="text/javascript" src="https://npmcdn.com/particlesjs@2.0.2/dist/particles.min.js"></script>-->
-
 	<!-- javascripts js -->
 	<script type="text/javascript" src="js/code.js"></script>
 
