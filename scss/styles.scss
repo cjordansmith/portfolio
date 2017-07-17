@@ -30,6 +30,10 @@ canvas {
 	height: 100vh;
 }
 
+a {
+	color: $accent;
+}
+
 .split-container {
 	height: 100%;
   width: 100%;
@@ -119,6 +123,10 @@ canvas {
 			padding: 0;
 			margin: 0;
 			height: 22px;
+			&:hover {
+				text-decoration: none;
+				color: $accent;
+			}
 		}
 	}
 
@@ -205,18 +213,27 @@ canvas {
 				position: relative;
 
 				a {
-					color: $base;
+					color: $accent;
+					&:hover {
+						text-decoration: none;
+					}
 					h3 {
+
 						&:hover {
 							color: $base;
+							text-decoration: none;
 						}
+
 					}
+
 					i {
 						font-size: 24px;
 						color: $dark-gray;
+
 						&:hover {
 							color: $accent;
 						}
+
 					}
 
 				}
@@ -231,7 +248,8 @@ canvas {
 .about {
 	-webkit-clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
 	clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
-
+	background: $base;
+	background: linear-gradient(45deg, $base, $accent);
 	padding-bottom: 70px;
 
 	h2 {
@@ -241,19 +259,23 @@ canvas {
 		color: $white;
 	}
 }
-
-.websites {
-	-webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 50px));
-	clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 50px));
+.clip-container {
 	background: $white;
+}
+.websites {
+	//-webkit-clip-path: polygon(0% 0%, 100% 4em, 100% calc(100% - 7em), 0% 100%);
+	//clip-path: polygon(0% 0%, 100% 0%, 100% calc(100% - 7em), 0% 100%);
+	background: $white;
+	padding-bottom: 100px;
 }
 
 .apps {
 	background: $light-gray;
-	-webkit-clip-path: polygon(0 0, 100% 50px, 100% 100%, 0 100%);
-	clip-path: polygon(0 0, 100% 50px, 100% 100%, 0 100%);
+	-webkit-clip-path: polygon(0 0, 100% 70px, 100% 100%, 0 100%);
+	clip-path: polygon(0 0, 100% 70px, 100% 100%, 0 100%);
 	margin-bottom: -20px;
-	margin-top: -40px;
+	margin-top: -70px;
+	padding-top: 100px;
 }
 
 /* ==========  contact form  ========== */
@@ -384,7 +406,7 @@ a > i.icon-right {
 .main-footer {
 	width: 100%;
 	padding: 0;
-	background: $base;
+	background: $dark-gray;
 	-webkit-clip-path: polygon(50% 0, 100% 18%, 100% 100%, 0 100%, 0 18%);
 	clip-path: polygon(50% 0, 100% 18%, 100% 100%, 0 100%, 0 18%);
 }
@@ -417,7 +439,8 @@ a > i.icon-right {
 		   color: $light-gray;
 
 			 &:hover {
-				 text-decoration: underline;
+				 text-decoration: none;
+				 color: $accent;
 			 }
 		 }
 		}

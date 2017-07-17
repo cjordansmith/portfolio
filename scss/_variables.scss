@@ -7,12 +7,12 @@
 $height: 100vh;
 
 /* ==========  cjordansmith colors  ========== */
-$base:					#0085D4;
+$base:					#0D47A1;
 $dark-gray:			#293643;
 $light-gray:		#ECF0F5;
 $white:					#ffffff;
-$accent:				#00BEF6;
-
+$accent:			  #03A9F4;
+//$accent:				#6ec9f7;
 
 /* ==========  buttons  ========== */
 button {
@@ -70,13 +70,13 @@ button:hover:after {
 	font-family: 'Poppins', sans-serif;
 	background: transparent;
 	font-size: 18px;
-	border: 2px solid $base;
+	border: 2px solid $accent;
 	border-radius: 0;
 	padding: 3% 9%;
 	&:hover {
 		color: $white;
-		background-color: $base;
-		border-color: $base;
+		background-color: $accent;
+		border-color: $accent;
 	}
 }
 
@@ -128,5 +128,5 @@ button:hover:after {
 	background: $white;
 }
 .bg-base {
-	background: $base;
+	background: $white;
 }
