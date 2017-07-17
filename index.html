@@ -30,6 +30,8 @@
 			<!-- COVER CONTENT -->
 			<div class="cover-content">
 				<div class="particles" id="particles-js"></div>
+				<div class="particles" id="particles-js2"></div>
+				<div class="particles" id="particles-js3"></div>
 
 				<div class="cover-name">
 					<a href="/"><h4>cjordansmith</h4></a>
@@ -126,9 +128,44 @@
 							<p>I am a web developer located in Kansas City, Missouri who enjoys building anything I can get my hands on. I can create anything from static personal sites to small-scale web applications. I primarily code in HTML, CSS, and JavaScript, with a few others thrown in here and there. If you are a business seeking a web presence or an employer looking to hire, you can get in touch with me below.</p>
 							<div class="about-btns">
 								<a href="./assets/resume/jordansmith-resume-20170605.pdf" target="_blank"><button class="btn btn-two">view resume</button></a>
-								<!-- <a href="./assets/resume/jordansmith-resume-20170605.pdf"><button class="btn btn-two">contact me</button></a> -->
+								<button type="button" class="btn btn-one" onclick="showContact()">contact me</button>
 							</div>
-
+							<p class="skills">
+								I have experience using Adobe Photoshop and Illustrator, Sketch, and recently Affinity Designer. I lean more towards a developer but can design on a smaller scale and build components that fit the theme I am creating, as well as convert .PSD files into HTML/CSS pages.
+							</p>
+							<p>
+								Other notable developer tools and libraries I have limited to working knowledge of include:
+								<h3 class="skills-title">Front-end</h3>
+								<ul>
+									<li>CSS preprocessors: SASS</li>
+									<li>Task runners: Grunt, Grunt</li>
+									<li>Module bundler: Webpack</li>
+									<li>Static site generator: Brunch, Surge.sh, JAM Stack</li>
+									<li>Template engines: Jade/Pug, EJS, Handlebars</li>
+									<li>JavaScript frameworks: React, Angular 1, Ember</li>
+									<li>Developer toolkits: Prepros, Scout</li>
+									<li>Package manager: npm</li>
+									<li>CSS frameworks: Bootstrap, Foundation, Propeller, Bulma</li>
+									<li>CMS: Drupal</li>
+									<li>Version control: Git, GitHub, GitLab, BitBucket (home server)</li>
+								</ul>
+								<h3 class="skills-title">Back-end</h3>
+								<ul>
+									<li>Node.js</li>
+									<li>Node framework: Express</li>
+									<li>Authentication: OAuth2</li>
+									<li>Container platform: Docker</li>
+									<li>Database: MongoDB, Mongoose, mLab</li>
+									<li>Hosting: GoDaddy, Namecheap, Github Pages, cPanel</li>
+									<li>Cloud PaaS: Heroku</li>
+								</ul>
+								<h3 class="skills-title">Other</h3>
+								<ul>
+									<li>Raspberry Pi servers</li>
+									<li>MacOS, Windows, Ubuntu</li>
+									<li>QNAP home NAS</li>
+								</ul>
+							</p>
 						</div>
 					</div>
 				</div><!-- end .about -->
@@ -150,10 +187,10 @@
 								</header>
 								<div class="project-content">
 									<p class="description">
-										Website service designed to connect users to providers who offer online help for anything they need, spanning from home repair to medical needs.
+										HTML/CSS, JavaScript, jQuery, Bootstrap3, Foundation, Font Awesome, Modernizr, PubNub, WebRTC
 									</p>
 									<p>
-										I started interning with iZooky my first semester in school. I was the solo designer/developer for the project, and was immediately thrown into the game with limited knowledge of development. I had to learn on the go and was able to gain experience with many tools and styles until I found something the entreprenuer approved of.
+										iZooky is a web service designed to connect users to providers who offer online help through video calls for anything they need, spanning from home repair to medical needs. I started interning with iZooky my first semester in school. I was the solo designer/developer for the project, and was immediately thrown into the game with limited knowledge of development. I had to learn on the go and was able to gain experience with many tools and styles until I found something the entreprenuer approved of.
 									</p>
 									<p>
 										Currently, the website is somewhere between a mockup and a working prototype. The primary technogies used are HTML, CSS, Bootstrap, and some jQuery/JavaScript here and there. iZooky is designed to be viewed on a desktop or laptop, but is responsive enough for tablets.
@@ -171,10 +208,10 @@
 								</header>
 								<div class="project-content">
 									<p class="description">
-										Student Showcase page for the Web Development and Digital Media program at Johnson County Community College.
+										HTML/CSS, JavaScript, Bulma, Brunch, SASS, CleanCSS, ImageOptimizer, Font Awesome, Wordpress
 									</p>
 									<p>
-										This was my final semester project at school were I was tasked with developing a student showcase page for the Web Development program at JCCC. I had ideas on how to incorporate a small Node.js page into the project, but ran into several road blocks along the way since the original site was developed with Wordpress. After days of trying to find work-arounds for adding Node.js, custom JavaScript, and my own styling into Wordpress without using plugins, I decided on a different route. With the "client's" permission, I spent the rest of the semester converting the PHP Wordpress site into purely HTML, CSS, and JavaScript in order to build the site using a static site generator, as well as remove the bloat and extra functionality of Wordpress that the site was not taking advantage of. Then I was able to create the student showcase page using Brunch as it's generator/builder and includes SASS, Clean CSS, and ImageOptimizer. I was limited on the amount of content I could gather from other students in the time frame of the project, but the goal is to hand off the website to the next capstone class to continue building and adding student pages to.
+										This was my final semester project at school were I was tasked with developing a student showcase page for the Web Development and Digital Media program at Johnson County Community College. I had ideas on how to incorporate a small Node.js page into the project, but ran into several road blocks along the way since the current site was developed with Wordpress. After days of trying to find work-arounds for adding Node.js, custom JavaScript, and custom styling into Wordpress, I decided on a different route. With the "client's" permission, I spent the rest of the semester converting the PHP Wordpress site into purely HTML, CSS, and JavaScript in order to build the site using a static site generator, as well as remove the bloat and extra functionality of Wordpress that the site was not utilizing. After that, I created the student showcase page using <a href="http://brunch.io/">Brunch</a> as the generator/builder and include SASS, Clean CSS, and ImageOptimizer. I was limited on the amount of content I could gather from other students in the time frame of the project, but the goal was to hand off the website to the next capstone class to continue building and adding student pages to.
 									</p>
 									<p>
 										 You can view the original pages <a href="http://wddm.web.csit.jccc.edu/wordpress/index.php/showcase/" target="_blank">here</a>.
@@ -191,6 +228,9 @@
 									<a href="https://github.com/cjordansmith/portfolio-jccc" target="_blank"><i class="fa fa-github icon-right"></i></a>
 								</header>
 								<div class="project-content">
+									<p class="description">
+										HTML/CSS, JavaScript, jQuery, Bootstrap3, Propeller, Font Awesome, Material Icons
+									</p>
 									<p>
 										This is the first design of my portfolio. It was created for a class at school so it includes some of the requirements of the project that I didn't feel were neccessary moving forward. The links to the projects may have changed, so to view my work or to contact me I recommend using my current site.
 									</p>
@@ -206,8 +246,11 @@
 									<a href="https://github.com/cjordansmith/zen-calvin-hobbes" target="_blank"><i class="fa fa-github icon-right"></i></a>
 								</header>
 								<div class="project-content">
+									<p class="description">
+										HTML/CSS
+									</p>
 									<p>
-										This is my design of CSS Zen Garden that I used the comic strip Calvin and Hobbes as inspiration. I made this for a final in school using the unedited HTML file from the website and added my own CSS.
+										This is my design of <a href="http://www.csszengarden.com/">CSS Zen Garden</a> that I used the comic strip Calvin and Hobbes as inspiration. I made this for a final in school using the unedited HTML file from the website and added my own CSS.
 									</p>
 								</div>
 							</div>
@@ -217,10 +260,13 @@
 						<div class="section-content">
 							<div class="project">
 								<header>
-									<a href="http://cjordansmith.me/cjk-jquery-mobile/" target="_blank"><h3>CJK - jQuery Mobile</h3></a>
+									<a href="http://cjordansmith.me/cjk-jquery-mobile/" target="_blank"><h3>CJK Mobile Website</h3></a>
 									<a href="https://github.com/cjordansmith/cjk-jquery-mobile" target="_blank"><i class="fa fa-github icon-right"></i></a>
 								</header>
 								<div class="project-content">
+									<p class="description">
+										HTML/CSS, JavaScript, jQuery Mobile
+									</p>
 									<p>
 										A custom design of CJK Software Consultants, Inc. using jQuery Mobile. This was my first experience using a JavaScript framework. Along with the website redesign, I also slightly altered the company logo and color scheme. You can view CJK's <a href="http://www.cjk-consulting.com/" class="inline-link">current website</a> to compare with my redesign.
 									</p>
@@ -248,12 +294,15 @@
 						<div class="section-content">
 							<div class="project">
 								<header>
-									<a href="http://cjordansmith.me/html1-final/final1.html"><h3>HTML 1 Class Final</h3></a>
-									<a href="https://github.com/cjordansmith/html1-final"><i class="fa fa-github icon-right"></i></a>
+									<a href="http://cjordansmith.me/html1-final/final1.html" target="_blank"><h3>HTML 1 Class Final</h3></a>
+									<a href="https://github.com/cjordansmith/html1-final" target="_blank"><i class="fa fa-github icon-right"></i></a>
 								</header>
 								<div class="project-content">
+									<p class="description">
+										HTML/CSS
+									</p>
 									<p>
-										My final project for my HTML &amp; CSS 1 class. I had to create a site that used the assigned topic as it's content, and my topic was SEO. This site uses only HTML, CSS, and JavaScript.
+										My final project for my HTML &amp; CSS 1 class. I had to create a site that used the assigned topic as it's content, and my topic was SEO. This is my first multiple page website and first time designing a site without using any starter CSS theme.
 									</p>
 								</div>
 							</div>
@@ -279,7 +328,7 @@
 								</header>
 								<div class="project-content">
 									<p class="description">
-										Node.js, Express, Angular 1, MongoDB, mLab, Pug, Heroku, Bootstrap 3
+										Node.js, Express, Angular 1, MongoDB, mLab, Pug, Heroku, Bootstrap3
 									</p>
 									<p>
 										This is an app that I built while learning the MEAN stack and working through the book <a href="https://www.manning.com/books/getting-mean-with-mongo-express-angular-and-node" target="_blank">Getting MEAN</a> by <a href="https://github.com/simonholmes/getting-MEAN" target="_blank">Simon Holmes</a>. It takes the user's location and shows nearby places that offer wifi. This is the first web app I made using a JavaScript framework, API's, authentication, and a database. This is easily my largest and most complex app.
@@ -315,7 +364,7 @@
 								</header>
 								<div class="project-content">
 									<p class="description">
-										Node.js, Express, MongoDB, Mongoose, Pug, Bootstrap 3
+										Node.js, Express, MongoDB, Mongoose, Pug, Bootstrap3
 									</p>
 									<p>
 										This is an app I started working on as a way to keep track of all the reciepts I had saved over the years whenever I would purchase computer or music equipment. It is still in it's static prototype phase, but it was a way for me to gain more experience with HTML templating (Jade/Pug) and running a simple Node.js/Express server for web applications.
@@ -333,7 +382,7 @@
 								</header>
 								<div class="project-content">
 									<p class="description">
-										Node.js, Express, MongoDB, Mongoose, mLab, EJS, Passport, Bootstrap 3
+										Node.js, Express, MongoDB, Mongoose, mLab, EJS, Passport, Bootstrap3
 									</p>
 									<p>
 										Another tutorial app that I worked through to aid in learning user log in and storing user information. User's can sign up/log in and add a little bit about themselves to display on their profile.

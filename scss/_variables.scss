@@ -22,12 +22,15 @@ button {
   position: relative;
   margin: 1em;
   display: inline-block;
-  padding: 0.5em 1em;
+  padding: 2% 6%;
   transition: all 0.3s ease-in-out;
   text-align: center;
 	text-transform: lowercase;
 	letter-spacing: 1.8px;
 	font-size: 18px;
+}
+button.btn:focus {
+	color: $white;
 }
 
 button:before,
@@ -72,7 +75,7 @@ button:hover:after {
 	font-size: 18px;
 	border: 2px solid $accent;
 	border-radius: 0;
-	padding: 3% 9%;
+	padding: 2% 6%;
 	&:hover {
 		color: $white;
 		background-color: $accent;
