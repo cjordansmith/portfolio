@@ -122,7 +122,7 @@ button:after {
   content: '';
   display: block;
   position: absolute;
-  border-color: #00BEF6;
+  border-color: #ffffff;
   box-sizing: border-box;
   border-style: solid;
   width: 1em;
@@ -144,21 +144,21 @@ button:hover:before,
 button:hover:after {
   width: calc(100% + 12px);
   height: calc(100% + 12px);
-  border-color: #00BEF6; }
+  border-color: #ffffff; }
 
 .btn-one {
-  color: #00BEF6;
+  color: #ffffff;
   font-weight: 600;
   font-family: 'Poppins', sans-serif;
   background: transparent;
   font-size: 18px;
-  border: 2px solid #00BEF6;
+  border: 2px solid #0085D4;
   border-radius: 0;
   padding: 3% 9%; }
   .btn-one:hover {
     color: #ffffff;
-    background-color: #00BEF6;
-    border-color: #00BEF6; }
+    background-color: #0085D4;
+    border-color: #0085D4; }
 
 .btn-two {
   font-weight: 600;
@@ -170,7 +170,7 @@ button:hover:after {
   border-radius: 0;
   padding: 2% 6%; }
   .btn-two:hover {
-    color: #0085D4;
+    color: #00BEF6;
     background-color: #ffffff;
     border-color: #ffffff; }
 
@@ -179,13 +179,13 @@ button:hover:after {
   content: '';
   display: block;
   position: absolute;
-  border-color: #ffffff; }
+  border-color: #00BEF6; }
 
 .btn-two:hover:before,
 .btn-two:hover:after {
   width: calc(100% + 12px);
   height: calc(100% + 12px);
-  border-color: #ffffff; }
+  border-color: #00BEF6; }
 
 /* ==========  text classes ========== */
 .text-white {
@@ -237,7 +237,7 @@ canvas {
   background: #293643; }
 
 .half + .half {
-  background: #f9f9f9;
+  background: #ECF0F5;
   overflow-x: hidden; }
 
 .left {
@@ -411,7 +411,7 @@ canvas {
   background: #ffffff; }
 
 .apps {
-  background: #f9f9f9;
+  background: #ECF0F5;
   -webkit-clip-path: polygon(0 0, 100% 50px, 100% 100%, 0 100%);
   clip-path: polygon(0 0, 100% 50px, 100% 100%, 0 100%);
   margin-bottom: -20px;
@@ -458,7 +458,7 @@ canvas {
   font-size: 14px; }
 
 .pmd-textfield-floating-label.pmd-textfield-floating-label-completed label {
-  color: #ffffff;
+  color: #00BEF6;
   opacity: 0.45;
   font-weight: 400; }
 
@@ -493,7 +493,7 @@ canvas {
       font-weight: 300;
       line-height: 2;
       letter-spacing: 0.7px;
-      color: #f9f9f9;
+      color: #ECF0F5;
       padding: 0; }
       .contact-info .contact-text p span {
         display: block;
@@ -502,7 +502,7 @@ canvas {
         letter-spacing: 0.7px; }
 
 .pmd-textfield .form-control {
-  color: #ffffff;
+  color: #293643;
   font-weight: 300;
   font-size: 14px;
   letter-spacing: 1px; }
@@ -569,14 +569,14 @@ a > i.icon-right {
     justify-content: space-around; }
     .footer-info ul li {
       display: block;
-      color: #f9f9f9;
+      color: #ECF0F5;
       font-weight: 400;
       letter-spacing: 0.7px; }
       .footer-info ul li:hover {
         cursor: pointer; }
       .footer-info ul li a {
         line-height: 1;
-        color: #f9f9f9; }
+        color: #ECF0F5; }
         .footer-info ul li a:hover {
           text-decoration: underline; }
 

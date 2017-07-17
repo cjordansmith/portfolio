@@ -25,6 +25,7 @@
 	<!-- MAIN CONTAINER -->
 	<div class="split-container">
 
+		<!-- LEFT SIDE -->
 		<div class="half left">
 
 			<!-- COVER CONTENT -->
@@ -35,24 +36,24 @@
 					<a href="/"><h4>cjordansmith</h4></a>
 				</div>
 
-				<!-- COVER MAIN TEXT -->
+				<!-- cover text -->
 				<div class="cover-text" id="cover-text">
 					<h1>hi,<br />i'm<br />jordan</h1>
 					<h4>developer - designer - builder</h4>
 					<button type="button" class="btn btn-one" onclick="showContact()">get in touch</button>
 				</div><!-- end .cover-text -->
 
-				<!-- SOCIAL MEDIA ICONS -->
+				<!-- social media icons -->
 				<div class="cover-social">
 					<ul>
-						<li><a href="https://github.com/cjordansmith"><i class="fa fa-github-alt i-transition" aria-hidden="true" target="_blank"></i></a></li>
+						<li><a href="https://github.com/cjordansmith" target="_blank"><i class="fa fa-github-alt i-transition" aria-hidden="true"></i></a></li>
 						<li><a href="https://www.linkedin.com/in/c-jordan-smith-5a026353" target="_blank"><i class="fa fa-linkedin i-transition" aria-hidden="true"></i></a></li>
-						<li><a href="mailto:someone@example.com?Subject=Hello%20again" target="_top"><i class="fa fa-envelope-o i-transition" aria-hidden="true"></i></a></li>
+						<li><a href="mailto:cjordansmith@gmail.com?Subject=Portfolio%20Contact" target="_top"><i class="fa fa-envelope-o i-transition" aria-hidden="true"></i></a></li>
 						<li><a href="./assets/resume/jordansmith-resume-20170605.pdf" target="_blank"><i class="fa fa-file-pdf-o i-transition" aria-hidden="true"></i></a></li>
 					</ul>
 				</div><!-- end .cover-social -->
 
-				<!-- CONTACT FORM -->
+				<!-- contact form -->
 				<div class="contact-frame" id="contact-frame">
 					<div class="content-container">
 						<div class="container-fluid section contact-flex">
@@ -63,7 +64,7 @@
 
 							<!-- CONTACT FORM MAIN -->
 							<div class="section-content">
-								<form action="https://formspree.io/cjordansmith@gmail.com" method="POST">
+								<form method="POST" action="https://formspree.io/cjordansmith@gmail.com">
 									<div class="form-group pmd-textfield pmd-textfield-floating-label">
 										<label for="fname">first name</label>
 										<input id="fname" name="fname" class="form-control" type="text" required />
@@ -100,7 +101,7 @@
 								<div class="contact-text">
 									<p>
 										<span>email</span>
-										cjordansmith@gmail.com</p>
+										<a href="mailto:cjordansmith@gmail.com?Subject=Portfolio%20Contact" target="_top">cjordansmith@gmail.com</a></p>
 								</div>
 							</div>
 
@@ -112,6 +113,7 @@
 
 		</div><!-- end .half-left -->
 
+		<!-- RIGHT SIDE -->
 		<div class="half right">
 			<div class="content-container bg-base">
 
@@ -140,7 +142,7 @@
 							<h2>websites</h2>
 						</header>
 
-						<!-- IZOOKY -->
+						<!-- izooky -->
 						<div class="section-content">
 							<div class="project">
 								<header>
@@ -161,25 +163,28 @@
 							</div>
 						</div><!-- end iZooky -->
 
-						<!-- WDDM -->
+						<!-- wddm -->
 						<div class="section-content">
 							<div class="project">
 								<header>
-									<a href="https://wddm.web.csit.jccc.edu/wordpress/" target="_blank"><h3>WDDM - Static/Brunch</h3></a>
-									<a href="https://wddm.web.csit.jccc.edu/wordpress/" target="_blank"><i class="fa fa-github icon-right"></i></a>
+									<a href="http://cjordansmith.me/wddm-showcase/showcase.html" target="_blank"><h3>WDDM Student Showcase- Static/Brunch</h3></a>
+									<a href="https://github.com/cjordansmith/wddm-showcase" target="_blank"><i class="fa fa-github icon-right"></i></a>
 								</header>
 								<div class="project-content">
 									<p class="description">
-										Homepage for the Web Development and Digital Media program at Johnson County Community College.
+										Student Showcase page for the Web Development and Digital Media program at Johnson County Community College.
 									</p>
 									<p>
-										This was my final semester project at school were I was tasked with developing a student showcase page for the Web Development program at JCCC. I had ideas on how to incorporate a small Node.js page into the project, but ran into several road blocks along the way since the original site was developed with Wordpress. After days of trying to find work-arounds for adding Node.js, custom JavaScript, and my own styling into Wordpress without using plugins, I decided on a different route. With the "client's" permission, I spent the rest of the semester converting the PHP Wordpress site into purely HTML, CSS, and JavaScript in order to build the site using a static site generator, as well as remove the bloat and extra functionality of Wordpress that the site was not taking advantage of. The site is now developed using Brunch as it's generator/builder and includes SASS, Clean CSS, and ImageOptimizer.
+										This was my final semester project at school were I was tasked with developing a student showcase page for the Web Development program at JCCC. I had ideas on how to incorporate a small Node.js page into the project, but ran into several road blocks along the way since the original site was developed with Wordpress. After days of trying to find work-arounds for adding Node.js, custom JavaScript, and my own styling into Wordpress without using plugins, I decided on a different route. With the "client's" permission, I spent the rest of the semester converting the PHP Wordpress site into purely HTML, CSS, and JavaScript in order to build the site using a static site generator, as well as remove the bloat and extra functionality of Wordpress that the site was not taking advantage of. Then I was able to create the student showcase page using Brunch as it's generator/builder and includes SASS, Clean CSS, and ImageOptimizer. I was limited on the amount of content I could gather from other students in the time frame of the project, but the goal is to hand off the website to the next capstone class to continue building and adding student pages to.
+									</p>
+									<p>
+										 You can view the original pages <a href="http://wddm.web.csit.jccc.edu/wordpress/index.php/showcase/" target="_blank">here</a>.
 									</p>
 								</div>
 							</div>
-						</div><!-- end WDDM -->
+						</div><!-- end wddm -->
 
-						<!-- PORTFOLIO v1 -->
+						<!-- portfolio v1 -->
 						<div class="section-content">
 							<div class="project">
 								<header>
@@ -192,10 +197,9 @@
 									</p>
 								</div>
 							</div>
-						</div><!-- end PORTFOLIO v1 -->
+						</div><!-- end portfolio v1 -->
 
-
-						<!-- CALVIN & HOBBES -->
+						<!-- calvin & hobbes -->
 						<div class="section-content">
 							<div class="project">
 								<header>
@@ -208,9 +212,9 @@
 									</p>
 								</div>
 							</div>
-						</div><!-- end CALVIN & HOBBES -->
+						</div><!-- end calvin & hobbes -->
 
-						<!-- CJK -->
+						<!-- cjk -->
 						<div class="section-content">
 							<div class="project">
 								<header>
@@ -225,7 +229,7 @@
 							</div>
 						</div><!-- end CJK -->
 
-						<!-- BLUES -->
+						<!-- blues -->
 						<!--
 						<div class="section-content">
 							<div class="project">
@@ -239,9 +243,9 @@
 									</p>
 								</div>
 							</div>
-						</div>--><!-- end BLUES -->
+						</div>--><!-- end blues -->
 
-						<!-- HTML FINAL -->
+						<!-- html final -->
 						<div class="section-content">
 							<div class="project">
 								<header>
@@ -254,7 +258,7 @@
 									</p>
 								</div>
 							</div>
-						</div><!-- end HTML FINAL -->
+						</div><!-- end html final -->
 
 					</div><!-- end .section-container -->
 				</div><!-- end .websites -->
@@ -262,72 +266,87 @@
 				<!-- APPS SECTION -->
 				<div id="apps" class="container-fluid section apps">
 					<div class="section-container">
+
 						<header>
-							<h2>apps</h2>
+							<h2>web apps</h2>
 						</header>
 
+						<!-- loc8r -->
 						<div class="section-content">
 							<div class="project">
 								<header>
 									<a href="https://cjs-loc8r.herokuapp.com/"><h3>Loc8r - MEAN</h3></a>
 									<a href="https://github.com/cjordansmith/loc8r"><i class="fa fa-github icon-right"></i></a>
-									<a href="https://cjs-loc8r.herokuapp.com/"><i class="devicon-heroku-line"></i></a>
 								</header>
 								<div class="project-content">
+									<p class="description">
+										Node.js, Express, Angular 1, MongoDB, mLab, Pug, Heroku, Bootstrap 3
+									</p>
 									<p>
-										Homepage for the Web Development and Digital Media program at Johnson County Community College. Homepage for the Web Development and Digital Media program at Johnson County Community College. Homepage for the Web Development and Digital Media program at Johnson County Community College.
+										This is an app that I built while learning the MEAN stack and working through the book <a href="https://www.manning.com/books/getting-mean-with-mongo-express-angular-and-node" target="_blank">Getting MEAN</a> by <a href="https://github.com/simonholmes/getting-MEAN" target="_blank">Simon Holmes</a>. It takes the user's location and shows nearby places that offer wifi. This is the first web app I made using a JavaScript framework, API's, authentication, and a database. This is easily my largest and most complex app.
 									</p>
 								</div>
-							</div>
-						</div>
+							</div><!-- end .project -->
+						</div><!-- end .section-content -->
 
+						<!-- timers -->
 						<div class="section-content">
 							<div class="project">
 								<header>
-									<a href="https://fullstack-timers-app.herokuapp.com"><h3>Timers - React</h3></a>
+									<a href="https://fullstack-timers-app.herokuapp.com/"><h3>Timers - React</h3></a>
 									<a href="https://github.com/cjordansmith/timers_app/"><i class="fa fa-github icon-right"></i></a>
-									<a href="https://fullstack-timers-app.herokuapp.com"><i class="devicon-heroku-line"></i></a>
 								</header>
 								<div class="project-content">
+									<p class="description">
+										Node.js, Express, React, Babel, Semantic-UI
+									</p>
 									<p>
-										Homepage for the Web Development and Digital Media program at Johnson County Community College. Homepage for the Web Development and Digital Media program at Johnson County Community College. Homepage for the Web Development and Digital Media program at Johnson County Community College.
+										Tutorial app I made while following the udemy React course by <a href="http://www.mead.io/" target="_blank">Andrew Mead</a>. It was my first introduction to React and helped me get an understanding of the basic architecture of a React app and the data flow between component layers.
 									</p>
 								</div>
-							</div>
-						</div>
+							</div><!-- end .project -->
+						</div><!-- end .section-content -->
 
+						<!-- slips -->
 						<div class="section-content">
 							<div class="project">
 								<header>
-									<a href="https://cjs-slips.herokuapp.com"><h3>Slips - MEAN</h3></a>
+									<a href="https://cjs-slips.herokuapp.com/"><h3>Slips - MEAN</h3></a>
 									<a href="https://github.com/cjordansmith/slips"><i class="fa fa-github icon-right"></i></a>
-									<a href="https://cjs-slips.herokuapp.com"><i class="devicon-heroku-line"></i></a>
 								</header>
 								<div class="project-content">
+									<p class="description">
+										Node.js, Express, MongoDB, Mongoose, Pug, Bootstrap 3
+									</p>
 									<p>
-										Homepage for the Web Development and Digital Media program at Johnson County Community College. Homepage for the Web Development and Digital Media program at Johnson County Community College. Homepage for the Web Development and Digital Media program at Johnson County Community College.
+										This is an app I started working on as a way to keep track of all the reciepts I had saved over the years whenever I would purchase computer or music equipment. It is still in it's static prototype phase, but it was a way for me to gain more experience with HTML templating (Jade/Pug) and running a simple Node.js/Express server for web applications.
 									</p>
 								</div>
-							</div>
-						</div>
+							</div><!-- end .project -->
+						</div><!-- end .section-content -->
 
+						<!-- learn about me -->
 						<div class="section-content">
 							<div class="project">
 								<header>
 									<a href="https://cjs-learnaboutme.herokuapp.com/"><h3>Learn About Me - MEAN</h3></a>
-									<a href="https://fullstack-timers-app.herokuapp.com/"><i class="fa fa-github icon-right"></i></a>
-									<a href="https://cjs-learnaboutme.herokuapp.com/"><i class="devicon-heroku-line"></i></a>
+									<a href="https://github.com/cjordansmith/learnaboutme"><i class="fa fa-github icon-right"></i></a>
 								</header>
 								<div class="project-content">
+									<p class="description">
+										Node.js, Express, MongoDB, Mongoose, mLab, EJS, Passport, Bootstrap 3
+									</p>
 									<p>
-										Homepage for the Web Development and Digital Media program at Johnson County Community College. Homepage for the Web Development and Digital Media program at Johnson County Community College. Homepage for the Web Development and Digital Media program at Johnson County Community College.
+										Another tutorial app that I worked through to aid in learning user log in and storing user information. User's can sign up/log in and add a little bit about themselves to display on their profile.
 									</p>
 								</div>
-							</div>
-						</div>
-					</div>
-					<!-- still need to add: Uploadr, Guest Book, Temperature Finder -->
-				</div><!-- end .apps -->
+							</div><!-- end .project -->
+						</div><!-- end .section-content -->
+
+						<!-- still need to add: Uploadr, Guest Book, Temperature Finder -->
+
+					</div><!-- end .section-container -->
+				</div><!-- end APPS -->
 
 				<!-- FOOTER -->
 				<footer class="main-footer">

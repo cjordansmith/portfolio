@@ -296,7 +296,7 @@ canvas {
 }
 
 .pmd-textfield-floating-label.pmd-textfield-floating-label-completed label {
-  color: $white;
+  color: $accent;
   opacity: 0.45;
   font-weight: 400;
 }
@@ -341,7 +341,7 @@ canvas {
 }
 
 .pmd-textfield .form-control {
-  color: $white;
+  color: $dark-gray;
   font-weight: 300;
 	font-size: 14px;
 	letter-spacing: 1px;

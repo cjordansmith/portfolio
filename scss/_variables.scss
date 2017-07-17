@@ -9,7 +9,7 @@ $height: 100vh;
 /* ==========  cjordansmith colors  ========== */
 $base:					#0085D4;
 $dark-gray:			#293643;
-$light-gray:		#f9f9f9;
+$light-gray:		#ECF0F5;
 $white:					#ffffff;
 $accent:				#00BEF6;
 
@@ -35,7 +35,7 @@ button:after {
 	content:'';
 	display:block;
 	position:absolute;
-	border-color: $accent;
+	border-color: $white;
 	box-sizing:border-box;
 	border-style: solid;
 	width:1em;
@@ -60,23 +60,23 @@ button:hover:before,
 button:hover:after {
 	width:calc(100% + 12px);
   height:calc(100% + 12px);
-	border-color: $accent;
+	border-color: $white;
 }
 
 
 .btn-one {
-	color: $accent;
+	color: $white;
 	font-weight: 600;
 	font-family: 'Poppins', sans-serif;
 	background: transparent;
 	font-size: 18px;
-	border: 2px solid $accent;
+	border: 2px solid $base;
 	border-radius: 0;
 	padding: 3% 9%;
 	&:hover {
 		color: $white;
-		background-color: $accent;
-		border-color: $accent;
+		background-color: $base;
+		border-color: $base;
 	}
 }
 
@@ -90,7 +90,7 @@ button:hover:after {
 	border-radius: 0;
 	padding: 2% 6%;
 	&:hover {
-		color: $base;
+		color: $accent;
 		background-color: $white;
 		border-color: $white;
 	}
@@ -100,13 +100,13 @@ button:hover:after {
 	content:'';
 	display:block;
 	position:absolute;
-	border-color: $white;
+	border-color: $accent;
 }
 .btn-two:hover:before,
 .btn-two:hover:after {
 	width:calc(100% + 12px);
   height:calc(100% + 12px);
-	border-color: $white;
+	border-color: $accent;
 }
 
 /* ==========  text classes ========== */
